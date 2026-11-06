@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proteína vegana en polvo · VitaMarket</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+  <header class="cabecera">
+    <a href="index.html" class="logo">VitaMarket</a>
+    <nav aria-label="Principal">
+      <ul class="menu">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="catalogo.html" aria-current="true">Catálogo</a></li>
+        <li><a href="carrito.html">Carrito (2)</a></li>
+        <li><a href="login.html">Acceder</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- MIGAS DE PAN -->
+    <nav class="migas" aria-label="Migas de pan">
+      <ol>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="catalogo.html">Catálogo</a></li>
+        <li aria-current="page">Proteína vegana en polvo</li>
+      </ol>
+    </nav>
+
+    <a href="catalogo.html" class="volver">← Volver al catálogo</a>
+
+    <div class="detalle">
+
+      <img src="img/proteina-vegana.svg"
+           alt="Bote de proteína vegana sabor cacao con un cacito"
+           class="detalle-imagen">
+
+      <!-- INFORMACIÓN PRINCIPAL -->
+      <div class="detalle-info">
+        <h1>Proteína vegana en polvo</h1>
+        <p class="detalle-meta">Sabor cacao · Formato 500 g · Marca: VitaMarket</p>
+
+        <ul class="etiquetas">
+          <li><span aria-hidden="true">✓</span> Vegano</li>
+          <li><span aria-hidden="true">✓</span> Sin gluten</li>
+          <li><span aria-hidden="true">✓</span> Sin lactosa</li>
+          <li><span aria-hidden="true">✓</span> Alto en proteína</li>
+        </ul>
+
+        <p>Proteína de guisante y arroz integral. 24 g de proteína por ración, ideal después de entrenar.</p>
+
+        <p class="precio precio-grande">
+          19,90 €
+          <span class="precio-kilo">(39,80 €/kg)</span>
+        </p>
+        <p><strong>Disponible</strong> · Entrega en 24–48 h</p>
+
+        <div class="compra">
+          <div class="campo">
+            <label for="cantidad">Cantidad</label>
+            <input type="number" id="cantidad" value="1" min="1" max="10">
+          </div>
+          <button type="button" class="boton boton-grande">Añadir al carrito</button>
+        </div>
+
+        <p class="aviso-ficha">Prototipo: el producto no se añade realmente al carrito.</p>
+        <a href="carrito.html">Ver mi carrito →</a>
+      </div>
+
+      <!-- DESCRIPCIÓN, INGREDIENTES Y ALÉRGENOS -->
+      <div class="detalle-texto">
+
+        <section>
+          <h2>Descripción</h2>
+          <p>
+            Mezcla de proteína de guisante y arroz integral con cacao natural.
+            Se disuelve fácilmente en agua o en bebida vegetal.
+            Endulzada con estevia, sin azúcar añadido.
+          </p>
+        </section>
+
+        <section>
+          <h2>Ingredientes</h2>
+          <p>
+            Proteína de guisante (60 %), proteína de arroz integral (30 %),
+            cacao desgrasado (8 %), aroma natural, estevia.
+          </p>
+        </section>
+
+        <section class="alergenos">
+          <h2>Alérgenos</h2>
+          <ul>
+            <li><span aria-hidden="true">✓</span> Sin gluten</li>
+            <li><span aria-hidden="true">✓</span> Sin lactosa</li>
+            <li><span aria-hidden="true">✓</span> Sin soja</li>
+          </ul>
+          <p>
+            <strong><span aria-hidden="true">⚠</span> Trazas:</strong>
+            elaborado en una fábrica que manipula frutos de cáscara.
+          </p>
+        </section>
+
+        <section>
+          <h2>Modo de uso</h2>
+          <p>Mezcla 30 g (2 cacitos) con 250 ml de agua o bebida vegetal.</p>
+        </section>
+
+      </div>
+
+      <!-- INFORMACIÓN NUTRICIONAL -->
+      <section class="detalle-nutricion">
+        <h2>Información nutricional</h2>
+        <table class="tabla-nutricional">
+          <caption>Valores por 100 g y por ración de 30 g</caption>
+          <thead>
+            <tr>
+              <th scope="col">Valor</th>
+              <th scope="col">Por 100 g</th>
+              <th scope="col">Por ración (30 g)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Energía</th>
+              <td>380 kcal</td>
+              <td>114 kcal</td>
+            </tr>
+            <tr class="fila-destacada">
+              <th scope="row">Proteínas</th>
+              <td>80 g</td>
+              <td>24 g</td>
+            </tr>
+            <tr>
+              <th scope="row">Hidratos de carbono</th>
+              <td>6 g</td>
+              <td>1,8 g</td>
+            </tr>
+            <tr>
+              <th scope="row">de los cuales azúcares</th>
+              <td>2 g</td>
+              <td>0,6 g</td>
+            </tr>
+            <tr>
+              <th scope="row">Grasas</th>
+              <td>5 g</td>
+              <td>1,5 g</td>
+            </tr>
+            <tr>
+              <th scope="row">Sal</th>
+              <td>0,9 g</td>
+              <td>0,27 g</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+    </div>
+
+  </main>
+
+  <footer class="pie">
+    <p><strong>Prototipo educativo:</strong> no se realizan compras ni envíos reales.</p>
+    <nav aria-label="Pie de página">
+      <ul class="menu-pie">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="catalogo.html">Catálogo</a></li>
+        <li><a href="carrito.html">Carrito</a></li>
+        <li><a href="login.html">Acceder</a></li>
+      </ul>
+    </nav>
+    <p>© 2026 VitaMarket · Práctica DAW</p>
+  </footer>
+
+</body>
+</html>

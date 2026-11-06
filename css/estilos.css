@@ -111,7 +111,7 @@ textarea:focus-visible {
 }
 
 /* Página actual: negrita + línea inferior, no solo color */
-.menu a[aria-current="page"] {
+.menu a[aria-current] {
   font-weight: bold;
   color: var(--verde-oscuro);
   border-bottom-color: var(--verde-oscuro);
@@ -534,4 +534,163 @@ legend {
   border-color: var(--borde);
   color: var(--texto-suave);
   cursor: not-allowed;
+}
+
+
+/* =========================================
+   17. DETALLE DE PRODUCTO
+   ========================================= */
+
+/* Migas de pan */
+.migas ol {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  list-style: none;
+  margin: 1.5rem 0 0.5rem;
+  padding: 0;
+  font-size: 0.9rem;
+}
+
+/* Separador "›" antes de cada miga, excepto la primera */
+.migas li + li::before {
+  content: "›";
+  margin-right: 0.5rem;
+  color: var(--texto-suave);
+}
+
+.volver {
+  display: inline-block;
+  margin-bottom: 1.5rem;
+  font-weight: bold;
+}
+
+/* Grid con áreas: imagen | información
+                   texto  | nutrición   */
+.detalle {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  grid-template-areas:
+    "imagen info"
+    "texto  nutricion";
+  gap: 2rem 3rem;
+  align-items: start;
+}
+
+.detalle-imagen {
+  grid-area: imagen;
+  border-radius: 12px;
+}
+
+.detalle-info {
+  grid-area: info;
+}
+
+.detalle-info h1 {
+  margin-top: 0;
+}
+
+.detalle-texto {
+  grid-area: texto;
+}
+
+.detalle-nutricion {
+  grid-area: nutricion;
+}
+
+.detalle-texto h2,
+.detalle-nutricion h2 {
+  font-size: 1.4rem;
+}
+
+.detalle-meta {
+  color: var(--texto-suave);
+}
+
+/* Precio */
+.precio-grande {
+  margin: 1rem 0 0.25rem;
+  font-size: 2rem;
+}
+
+.precio-kilo {
+  color: var(--texto-suave);
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+/* Cantidad + botón en fila */
+.compra {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  gap: 1rem;
+  margin: 1.5rem 0 0.5rem;
+}
+
+.compra .campo {
+  margin-bottom: 0;
+}
+
+.compra input {
+  width: 6rem;
+}
+
+/* Variante de botón: más grande */
+.boton-grande {
+  padding: 1rem 2rem;
+  font-size: 1.125rem;
+}
+
+/* Caja de alérgenos */
+.alergenos {
+  padding: 1rem 1.25rem;
+  border: 3px solid var(--verde-oscuro);
+  border-radius: 8px;
+  background-color: var(--verde-claro);
+}
+
+.alergenos h2 {
+  margin-top: 0;
+}
+
+.alergenos ul {
+  margin: 0 0 0.5rem;
+  padding: 0;
+  list-style: none;
+}
+
+/* Tabla nutricional */
+.tabla-nutricional {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.tabla-nutricional caption {
+  margin-bottom: 0.5rem;
+  color: var(--texto-suave);
+  font-size: 0.9rem;
+  text-align: left;
+}
+
+.tabla-nutricional th,
+.tabla-nutricional td {
+  padding: 0.6rem 0.75rem;
+  border-bottom: 1px solid var(--borde);
+  text-align: left;
+}
+
+.tabla-nutricional thead th {
+  background-color: var(--verde-claro);
+  color: var(--verde-oscuro);
+}
+
+.tabla-nutricional tbody th {
+  font-weight: normal;
+}
+
+/* Proteínas en negrita: es el dato que busca el deportista */
+.tabla-nutricional .fila-destacada th,
+.tabla-nutricional .fila-destacada td {
+  font-weight: bold;
 }
