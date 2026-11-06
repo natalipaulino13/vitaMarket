@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 450" width="600" height="450">
+  <!-- Fondo -->
+  <rect width="600" height="450" fill="#e8f3e4"/>
+  <circle cx="470" cy="90" r="120" fill="#d6eacf"/>
+  <circle cx="90" cy="400" r="110" fill="#d6eacf"/>
+  <ellipse cx="300" cy="392" rx="190" ry="22" fill="#c4dcbc"/>
+
+  <!-- Bote -->
+  <rect x="190" y="95" width="220" height="40" rx="10" fill="#3f6b45"/>
+  <rect x="200" y="128" width="200" height="12" fill="#335a39"/>
+  <path d="M195 140 H405 L398 380 Q397 392 385 392 H215 Q203 392 202 380 Z" fill="#ffffff"/>
+  <path d="M195 140 H405 L403 175 H197 Z" fill="#f1f1ec"/>
+
+  <!-- Etiqueta -->
+  <rect x="215" y="190" width="170" height="170" rx="14" fill="#5b8c5a"/>
+  <!-- Hoja -->
+  <path d="M300 205 C330 210 345 235 335 262 C310 262 290 245 300 205 Z" fill="#cfe8c6"/>
+  <path d="M300 205 C270 210 255 235 265 262 C290 262 310 245 300 205 Z" fill="#a9d39c"/>
+  <line x1="300" y1="212" x2="300" y2="268" stroke="#3f6b45" stroke-width="3" stroke-linecap="round"/>
+  <text x="300" y="296" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="bold" fill="#ffffff">PROTEÍNA</text>
+  <text x="300" y="319" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="bold" fill="#ffffff">VEGANA</text>
+  <text x="300" y="344" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#e8f3e4">Cacao · 500 g</text>
+
+  <!-- Cacito con polvo -->
+  <path d="M430 335 Q430 375 470 375 Q510 375 510 335 Z" fill="#ffffff" stroke="#c9c9c0" stroke-width="2"/>
+  <path d="M436 337 Q450 315 470 322 Q492 314 504 337 Z" fill="#8a5a3c"/>
+  <rect x="505" y="345" width="55" height="10" rx="5" fill="#ffffff" stroke="#c9c9c0" stroke-width="2"/>
+  <circle cx="470" cy="388" r="4" fill="#8a5a3c"/>
+  <circle cx="488" cy="392" r="3" fill="#8a5a3c"/>
+  <circle cx="455" cy="391" r="2.5" fill="#8a5a3c"/>
+</svg>
