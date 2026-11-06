@@ -1,0 +1,157 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 1160" width="1400" height="1160" font-family="Arial, Helvetica, sans-serif">
+  <style>
+    .box { fill: #ffffff; stroke: #555; stroke-width: 2; }
+    .soft { fill: #f2f2f2; stroke: #555; stroke-width: 2; }
+    .dark { fill: #555; stroke: #555; stroke-width: 2; }
+    .tag { fill: #ffffff; stroke: #555; stroke-width: 1.5; }
+    .img { fill: #e6e6e6; stroke: #777; stroke-width: 1.5; }
+    .x { stroke: #999; stroke-width: 1.5; }
+    .field { fill: #ffffff; stroke: #777; stroke-width: 1.5; }
+    .line { stroke: #bbb; stroke-width: 1; }
+    .t { fill: #222; font-size: 15px; }
+    .s { fill: #444; font-size: 13px; }
+    .xs { fill: #666; font-size: 11px; font-style: italic; }
+    .h1 { fill: #111; font-size: 28px; font-weight: bold; }
+    .h2 { fill: #111; font-size: 19px; font-weight: bold; }
+    .price { fill: #111; font-size: 30px; font-weight: bold; }
+    .b { font-weight: bold; }
+    .w { fill: #ffffff; font-size: 14px; font-weight: bold; }
+    .link { fill: #222; font-size: 14px; text-decoration: underline; }
+    .note { fill: #7a3e9d; font-size: 13px; }
+    .num { fill: #7a3e9d; }
+    .numt { fill: #ffffff; font-size: 13px; font-weight: bold; }
+  </style>
+
+  <rect width="1400" height="1160" fill="#ffffff"/>
+  <text x="40" y="32" class="h2" font-size="21">Boceto 3 · Detalle de producto (detalle.html)</text>
+
+  <rect x="40" y="50" width="1000" height="1090" class="box"/>
+
+  <!-- HEADER -->
+  <rect x="40" y="50" width="1000" height="80" class="soft"/>
+  <rect x="60" y="70" width="150" height="40" class="box"/>
+  <text x="80" y="96" class="t b">[logo] VitaMarket</text>
+  <text x="600" y="96" class="t">Inicio</text>
+  <text x="690" y="96" class="t b">Catálogo</text>
+  <line x1="690" y1="103" x2="757" y2="103" stroke="#222" stroke-width="3"/>
+  <text x="790" y="96" class="t">Carrito (2)</text>
+  <text x="910" y="96" class="t">Acceder</text>
+
+  <!-- MIGAS + VOLVER -->
+  <text x="60" y="160" class="s"><tspan text-decoration="underline">Inicio</tspan> › <tspan text-decoration="underline">Catálogo</tspan> › Proteína vegana en polvo</text>
+  <text x="60" y="188" class="link">← Volver al catálogo</text>
+
+  <!-- ZONA PRINCIPAL (grid: imagen + información) -->
+  <rect x="60" y="210" width="440" height="360" class="img"/>
+  <line x1="60" y1="210" x2="500" y2="570" class="x"/>
+  <line x1="500" y1="210" x2="60" y2="570" class="x"/>
+  <text x="185" y="395" class="s">Imagen del bote de proteína</text>
+
+  <text x="530" y="245" class="h1">Proteína vegana en polvo</text>
+  <text x="530" y="270" class="s">Sabor cacao · Formato 500 g · Marca: GreenFit</text>
+  <rect x="530" y="282" width="78" height="24" rx="12" class="tag"/><text x="541" y="299" class="s">✓ Vegano</text>
+  <rect x="616" y="282" width="100" height="24" rx="12" class="tag"/><text x="627" y="299" class="s">✓ Sin gluten</text>
+  <rect x="724" y="282" width="105" height="24" rx="12" class="tag"/><text x="735" y="299" class="s">✓ Sin lactosa</text>
+  <rect x="837" y="282" width="130" height="24" rx="12" class="tag"/><text x="848" y="299" class="s">✓ Alto en proteína</text>
+  <text x="530" y="335" class="t">Proteína de guisante y arroz integral. 24 g de</text>
+  <text x="530" y="355" class="t">proteína por ración, ideal después de entrenar.</text>
+  <text x="530" y="400" class="price">19,90 €</text>
+  <text x="660" y="400" class="s">(39,80 €/kg)</text>
+  <text x="530" y="428" class="t b">✓ Disponible · Entrega en 24–48 h</text>
+
+  <text x="530" y="465" class="s b">Cantidad</text>
+  <rect x="530" y="475" width="80" height="42" class="field"/>
+  <text x="560" y="502" class="t">1</text>
+  <rect x="625" y="475" width="210" height="42" rx="6" class="dark"/>
+  <text x="663" y="502" class="w">Añadir al carrito</text>
+  <text x="530" y="540" class="xs">Prototipo: el producto no se añade realmente al carrito.</text>
+  <text x="530" y="563" class="link">Ver mi carrito →</text>
+
+  <!-- COLUMNA IZQUIERDA: descripción, ingredientes, alérgenos -->
+  <text x="60" y="625" class="h2">Descripción</text>
+  <text x="60" y="652" class="t">Mezcla de proteína de guisante y arroz integral con</text>
+  <text x="60" y="672" class="t">cacao natural. Se disuelve fácilmente en agua o en</text>
+  <text x="60" y="692" class="t">bebida vegetal. Endulzada con estevia, sin azúcar añadido.</text>
+
+  <text x="60" y="735" class="h2">Ingredientes</text>
+  <text x="60" y="762" class="t">Proteína de guisante (60 %), proteína de arroz integral</text>
+  <text x="60" y="782" class="t">(30 %), cacao desgrasado (8 %), aroma natural, estevia.</text>
+
+  <rect x="60" y="805" width="460" height="110" rx="6" class="box" stroke-width="3"/>
+  <text x="78" y="833" class="h2">Alérgenos</text>
+  <text x="78" y="860" class="t">✓ Sin gluten · ✓ Sin lactosa · ✓ Sin soja</text>
+  <text x="78" y="885" class="t">⚠ Elaborado en una fábrica que manipula</text>
+  <text x="78" y="905" class="t">   frutos de cáscara.</text>
+
+  <!-- COLUMNA DERECHA: información nutricional -->
+  <text x="550" y="625" class="h2">Información nutricional</text>
+  <rect x="550" y="640" width="470" height="275" class="box"/>
+  <rect x="550" y="640" width="470" height="40" class="soft"/>
+  <text x="565" y="665" class="s b">Valor</text>
+  <text x="760" y="665" class="s b">Por 100 g</text>
+  <text x="880" y="665" class="s b">Por ración (30 g)</text>
+  <text x="565" y="710" class="s">Energía</text><text x="760" y="710" class="s">380 kcal</text><text x="880" y="710" class="s">114 kcal</text>
+  <line x1="550" y1="722" x2="1020" y2="722" class="line"/>
+  <text x="565" y="748" class="s b">Proteínas</text><text x="760" y="748" class="s b">80 g</text><text x="880" y="748" class="s b">24 g</text>
+  <line x1="550" y1="760" x2="1020" y2="760" class="line"/>
+  <text x="565" y="786" class="s">Hidratos de carbono</text><text x="760" y="786" class="s">6 g</text><text x="880" y="786" class="s">1,8 g</text>
+  <line x1="550" y1="798" x2="1020" y2="798" class="line"/>
+  <text x="565" y="824" class="s">   de los cuales azúcares</text><text x="760" y="824" class="s">2 g</text><text x="880" y="824" class="s">0,6 g</text>
+  <line x1="550" y1="836" x2="1020" y2="836" class="line"/>
+  <text x="565" y="862" class="s">Grasas</text><text x="760" y="862" class="s">5 g</text><text x="880" y="862" class="s">1,5 g</text>
+  <line x1="550" y1="874" x2="1020" y2="874" class="line"/>
+  <text x="565" y="900" class="s">Sal</text><text x="760" y="900" class="s">0,9 g</text><text x="880" y="900" class="s">0,27 g</text>
+
+  <!-- MODO DE USO -->
+  <text x="60" y="960" class="h2">Modo de uso</text>
+  <text x="60" y="987" class="t">Mezcla 30 g (2 cacitos) con 250 ml de agua o bebida vegetal.</text>
+
+  <!-- FOOTER -->
+  <rect x="40" y="1030" width="1000" height="110" class="soft"/>
+  <text x="80" y="1065" class="t b">⚠ Prototipo educativo: no se realizan compras ni envíos reales.</text>
+  <text x="80" y="1095" class="t">Inicio · Catálogo · Carrito · Acceder</text>
+  <text x="80" y="1122" class="s">© 2026 VitaMarket · Práctica DAW</text>
+
+  <!-- ANOTACIONES -->
+  <g>
+    <circle cx="1075" cy="88" r="12" class="num"/><text x="1071" y="93" class="numt">1</text>
+    <text x="1095" y="85" class="note">"Catálogo" sigue marcado: el detalle</text>
+    <text x="1095" y="102" class="note">pertenece a esa sección.</text>
+  </g>
+  <g>
+    <circle cx="1075" cy="172" r="12" class="num"/><text x="1071" y="177" class="numt">2</text>
+    <text x="1095" y="169" class="note">Migas de pan + "Volver al catálogo":</text>
+    <text x="1095" y="186" class="note">el usuario sabe dónde está y cómo salir.</text>
+  </g>
+  <g>
+    <circle cx="1075" cy="250" r="12" class="num"/><text x="1071" y="255" class="numt">3</text>
+    <text x="1095" y="247" class="note">Grid con áreas: imagen | información.</text>
+    <text x="1095" y="264" class="note">Etiquetas con ✓ + texto (no solo color).</text>
+  </g>
+  <g>
+    <circle cx="1075" cy="400" r="12" class="num"/><text x="1071" y="405" class="numt">4</text>
+    <text x="1095" y="397" class="note">Precio + precio por kilo juntos:</text>
+    <text x="1095" y="414" class="note">el deportista compara (perfil 3).</text>
+  </g>
+  <g>
+    <circle cx="1075" cy="497" r="12" class="num"/><text x="1071" y="502" class="numt">5</text>
+    <text x="1095" y="494" class="note">Acción principal clara. Cantidad con</text>
+    <text x="1095" y="511" class="note">etiqueta (input number, min="1").</text>
+    <text x="1095" y="528" class="note">Fila con Flexbox. Aviso de prototipo.</text>
+  </g>
+  <g>
+    <circle cx="1075" cy="770" r="12" class="num"/><text x="1071" y="775" class="numt">6</text>
+    <text x="1095" y="767" class="note">Ingredientes completos para la persona</text>
+    <text x="1095" y="784" class="note">vegana (perfil 2).</text>
+  </g>
+  <g>
+    <circle cx="1075" cy="860" r="12" class="num"/><text x="1071" y="865" class="numt">7</text>
+    <text x="1095" y="857" class="note">Alérgenos destacados en su propia caja,</text>
+    <text x="1095" y="874" class="note">incluidas las trazas (perfil 1).</text>
+  </g>
+  <g>
+    <circle cx="1075" cy="660" r="12" class="num"/><text x="1071" y="665" class="numt">8</text>
+    <text x="1095" y="657" class="note">Tabla nutricional con &lt;table&gt;: son datos</text>
+    <text x="1095" y="674" class="note">en filas y columnas. Proteína en negrita.</text>
+  </g>
+</svg>

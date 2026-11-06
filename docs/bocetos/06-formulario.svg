@@ -1,0 +1,174 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 1400" width="1400" height="1400" font-family="Arial, Helvetica, sans-serif">
+  <style>
+    .box { fill: #ffffff; stroke: #555; stroke-width: 2; }
+    .soft { fill: #f2f2f2; stroke: #555; stroke-width: 2; }
+    .dark { fill: #555; stroke: #555; stroke-width: 2; }
+    .field { fill: #ffffff; stroke: #777; stroke-width: 1.5; }
+    .fs { fill: none; stroke: #999; stroke-width: 1.5; }
+    .t { fill: #222; font-size: 15px; }
+    .s { fill: #444; font-size: 13px; }
+    .xs { fill: #666; font-size: 11px; font-style: italic; }
+    .h1 { fill: #111; font-size: 30px; font-weight: bold; }
+    .h2 { fill: #111; font-size: 19px; font-weight: bold; }
+    .lg { fill: #111; font-size: 17px; font-weight: bold; }
+    .b { font-weight: bold; }
+    .w { fill: #ffffff; font-size: 15px; font-weight: bold; }
+    .link { fill: #222; font-size: 14px; text-decoration: underline; }
+    .note { fill: #7a3e9d; font-size: 13px; }
+    .num { fill: #7a3e9d; }
+    .numt { fill: #ffffff; font-size: 13px; font-weight: bold; }
+  </style>
+
+  <rect width="1400" height="1400" fill="#ffffff"/>
+  <text x="40" y="32" class="h2" font-size="21">Boceto 6 · Formulario de entrega (formulario.html)</text>
+
+  <rect x="40" y="50" width="1000" height="1330" class="box"/>
+
+  <!-- HEADER -->
+  <rect x="40" y="50" width="1000" height="80" class="soft"/>
+  <rect x="60" y="70" width="150" height="40" class="box"/>
+  <text x="80" y="96" class="t b">[logo] VitaMarket</text>
+  <text x="600" y="96" class="t">Inicio</text>
+  <text x="690" y="96" class="t">Catálogo</text>
+  <text x="790" y="96" class="t">Carrito (2)</text>
+  <text x="910" y="96" class="t">Acceder</text>
+
+  <!-- PASOS -->
+  <rect x="60" y="150" width="960" height="40" class="soft"/>
+  <text x="80" y="176" class="t">① Carrito   ›   ② Acceso   ›</text>
+  <text x="300" y="176" class="t b">③ Datos de entrega (paso actual)</text>
+
+  <!-- TÍTULO + AVISOS -->
+  <text x="60" y="240" class="h1">Datos de entrega</text>
+  <text x="60" y="268" class="t">Los campos marcados con <tspan class="b">*</tspan> son obligatorios.</text>
+  <rect x="60" y="282" width="620" height="34" class="soft" stroke-dasharray="6 4"/>
+  <text x="75" y="304" class="s b">⚠ Prototipo: la solicitud no se envía ni se guarda. No uses datos reales.</text>
+
+  <!-- FIELDSET 1: CONTACTO -->
+  <rect x="60" y="345" width="620" height="270" rx="4" class="fs"/>
+  <rect x="75" y="333" width="175" height="24" fill="#ffffff"/>
+  <text x="80" y="351" class="lg">Datos de contacto</text>
+
+  <text x="80" y="385" class="t b">Nombre completo *</text>
+  <rect x="80" y="395" width="580" height="38" class="field"/>
+
+  <text x="80" y="463" class="t b">Correo electrónico *</text>
+  <rect x="80" y="473" width="580" height="38" class="field"/>
+  <text x="92" y="497" class="xs">nombre@ejemplo.com</text>
+
+  <text x="80" y="541" class="t b">Teléfono *</text>
+  <rect x="80" y="551" width="280" height="38" class="field"/>
+  <text x="375" y="575" class="s">Formato: 9 cifras sin espacios (612345678)</text>
+
+  <!-- FIELDSET 2: ENTREGA -->
+  <rect x="60" y="650" width="620" height="420" rx="4" class="fs"/>
+  <rect x="75" y="638" width="85" height="24" fill="#ffffff"/>
+  <text x="80" y="656" class="lg">Entrega</text>
+
+  <rect x="80" y="680" width="580" height="80" rx="4" class="fs"/>
+  <rect x="92" y="670" width="150" height="20" fill="#ffffff"/>
+  <text x="96" y="685" class="s b">Tipo de entrega *</text>
+  <circle cx="102" cy="712" r="7" class="field"/><text x="118" y="717" class="t">A domicilio (3,99 €)</text>
+  <circle cx="102" cy="740" r="7" class="field"/><text x="118" y="745" class="t">Recogida en tienda (gratis)</text>
+
+  <text x="80" y="795" class="t b">Dirección <tspan class="s" font-weight="normal">(solo si eliges a domicilio)</tspan></text>
+  <rect x="80" y="805" width="580" height="38" class="field"/>
+  <text x="92" y="829" class="xs">Calle, número, piso</text>
+
+  <text x="80" y="873" class="t b">Código postal <tspan class="s" font-weight="normal">(5 cifras)</tspan></text>
+  <rect x="80" y="883" width="180" height="38" class="field"/>
+
+  <text x="80" y="951" class="t b">Fecha de entrega *</text>
+  <rect x="80" y="961" width="260" height="38" class="field"/>
+  <text x="92" y="985" class="s">dd/mm/aaaa   📅</text>
+  <text x="80" y="1017" class="xs">A partir de mañana.</text>
+
+  <text x="370" y="951" class="t b">Franja horaria *</text>
+  <rect x="370" y="961" width="290" height="38" class="field"/>
+  <text x="382" y="985" class="s">Elige una franja ▾</text>
+  <text x="370" y="1017" class="xs">Mañana 9–14 h · Tarde 16–21 h</text>
+
+  <!-- FIELDSET 3: PREFERENCIAS -->
+  <rect x="60" y="1100" width="620" height="185" rx="4" class="fs"/>
+  <rect x="75" y="1088" width="215" height="24" fill="#ffffff"/>
+  <text x="80" y="1106" class="lg">Preferencias (opcional)</text>
+
+  <rect x="80" y="1128" width="16" height="16" class="field"/>
+  <text x="106" y="1141" class="t">Si un producto está agotado, sustituirlo por otro</text>
+  <text x="106" y="1160" class="t">con las mismas características (p. ej., sin gluten)</text>
+
+  <text x="80" y="1192" class="t b">Instrucciones para el repartidor</text>
+  <rect x="80" y="1202" width="580" height="68" class="field"/>
+  <text x="92" y="1224" class="xs">Ej.: llamar al timbre 2.º B</text>
+
+  <!-- BOTONES -->
+  <rect x="60" y="1305" width="220" height="48" rx="6" class="dark"/>
+  <text x="105" y="1335" class="w">Solicitar entrega</text>
+  <text x="305" y="1335" class="link">← Volver al carrito</text>
+
+  <!-- RESUMEN LATERAL -->
+  <rect x="700" y="345" width="320" height="200" rx="8" class="box"/>
+  <text x="720" y="380" class="h2">Tu pedido</text>
+  <text x="720" y="415" class="t">Proteína vegana × 1</text>
+  <text x="720" y="440" class="t">Pasta de lentejas × 3</text>
+  <text x="720" y="480" class="t b">Total: 31,36 €</text>
+  <text x="720" y="505" class="xs">Incluye envío a domicilio</text>
+  <text x="720" y="530" class="link">Modificar carrito</text>
+
+  <!-- FOOTER (fuera del marco visible por espacio) -->
+  <text x="60" y="1372" class="xs">[ Pie de página igual que en el resto de páginas ]</text>
+
+  <!-- ANOTACIONES -->
+  <g>
+    <circle cx="1075" cy="170" r="12" class="num"/><text x="1071" y="175" class="numt">1</text>
+    <text x="1095" y="167" class="note">Paso 3 de 3: el usuario sabe que es</text>
+    <text x="1095" y="184" class="note">el último paso.</text>
+  </g>
+  <g>
+    <circle cx="1075" cy="285" r="12" class="num"/><text x="1071" y="290" class="numt">2</text>
+    <text x="1095" y="282" class="note">Obligatorios marcados con * y explicado</text>
+    <text x="1095" y="299" class="note">en texto. Aviso de prototipo.</text>
+  </g>
+  <g>
+    <circle cx="1075" cy="400" r="12" class="num"/><text x="1071" y="405" class="numt">3</text>
+    <text x="1095" y="397" class="note">3 fieldset con legend: contacto, entrega</text>
+    <text x="1095" y="414" class="note">y preferencias. Etiquetas con for/id.</text>
+  </g>
+  <g>
+    <circle cx="1075" cy="570" r="12" class="num"/><text x="1071" y="575" class="numt">4</text>
+    <text x="1095" y="567" class="note">text · email · tel (pattern 9 cifras) con</text>
+    <text x="1095" y="584" class="note">instrucción del formato.</text>
+  </g>
+  <g>
+    <circle cx="1075" cy="712" r="12" class="num"/><text x="1071" y="717" class="numt">5</text>
+    <text x="1095" y="709" class="note">Grupo de radio (1 campo) con su propio</text>
+    <text x="1095" y="726" class="note">fieldset + legend.</text>
+  </g>
+  <g>
+    <circle cx="1075" cy="880" r="12" class="num"/><text x="1071" y="885" class="numt">6</text>
+    <text x="1095" y="877" class="note">Código postal: pattern de 5 cifras.</text>
+  </g>
+  <g>
+    <circle cx="1075" cy="980" r="12" class="num"/><text x="1071" y="985" class="numt">7</text>
+    <text x="1095" y="977" class="note">type="date" con min · select con</text>
+    <text x="1095" y="994" class="note">franjas. Instrucciones debajo.</text>
+  </g>
+  <g>
+    <circle cx="1075" cy="1145" r="12" class="num"/><text x="1071" y="1150" class="numt">8</text>
+    <text x="1095" y="1142" class="note">Checkbox con propósito claro: sale del</text>
+    <text x="1095" y="1159" class="note">perfil celíaco/intolerante.</text>
+  </g>
+  <g>
+    <circle cx="1075" cy="1235" r="12" class="num"/><text x="1071" y="1240" class="numt">9</text>
+    <text x="1095" y="1232" class="note">textarea opcional.</text>
+  </g>
+  <g>
+    <circle cx="1075" cy="1330" r="12" class="num"/><text x="1071" y="1335" class="numt">10</text>
+    <text x="1095" y="1327" class="note">Texto de envío específico + salida atrás.</text>
+  </g>
+  <g>
+    <circle cx="1075" cy="445" r="12" class="num"/><text x="1071" y="450" class="numt">11</text>
+    <text x="1095" y="442" class="note">Resumen del pedido para no perder</text>
+    <text x="1095" y="459" class="note">el contexto. Grid: formulario | resumen.</text>
+  </g>
+</svg>

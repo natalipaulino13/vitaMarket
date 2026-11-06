@@ -1,0 +1,182 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 1320" width="1400" height="1320" font-family="Arial, Helvetica, sans-serif">
+  <style>
+    .box { fill: #ffffff; stroke: #555; stroke-width: 2; }
+    .soft { fill: #f2f2f2; stroke: #555; stroke-width: 2; }
+    .dark { fill: #555; stroke: #555; stroke-width: 2; }
+    .tag { fill: #ffffff; stroke: #555; stroke-width: 1.5; }
+    .img { fill: #e6e6e6; stroke: #777; stroke-width: 1.5; }
+    .x { stroke: #999; stroke-width: 1.5; }
+    .t { fill: #222; font-size: 15px; }
+    .s { fill: #444; font-size: 13px; }
+    .xs { fill: #666; font-size: 11px; font-style: italic; }
+    .h1 { fill: #111; font-size: 30px; font-weight: bold; }
+    .h2 { fill: #111; font-size: 21px; font-weight: bold; }
+    .b { font-weight: bold; }
+    .w { fill: #ffffff; font-size: 15px; font-weight: bold; }
+    .note { fill: #7a3e9d; font-size: 13px; }
+    .num { fill: #7a3e9d; }
+    .numt { fill: #ffffff; font-size: 13px; font-weight: bold; }
+  </style>
+
+  <rect width="1400" height="1320" fill="#ffffff"/>
+  <text x="40" y="32" class="h2">Boceto 1 · Página de inicio (index.html)</text>
+
+  <!-- Marco de la página -->
+  <rect x="40" y="50" width="1000" height="1240" class="box"/>
+
+  <!-- HEADER -->
+  <rect x="40" y="50" width="1000" height="80" class="soft"/>
+  <rect x="60" y="70" width="150" height="40" class="box"/>
+  <text x="80" y="96" class="t b">[logo] VitaMarket</text>
+  <text x="600" y="96" class="t b">Inicio</text>
+  <line x1="600" y1="103" x2="645" y2="103" stroke="#222" stroke-width="3"/>
+  <text x="690" y="96" class="t">Catálogo</text>
+  <text x="790" y="96" class="t">Carrito (2)</text>
+  <text x="910" y="96" class="t">Acceder</text>
+
+  <!-- HERO -->
+  <rect x="40" y="130" width="1000" height="280" fill="#f8f8f8" stroke="none"/>
+  <text x="80" y="200" class="h1">Tu supermercado para</text>
+  <text x="80" y="236" class="h1">dietas especiales</text>
+  <text x="80" y="268" class="t">Productos veganos, sin gluten, sin lactosa y de nutrición</text>
+  <text x="80" y="290" class="t">deportiva, con ingredientes y alérgenos siempre visibles.</text>
+  <rect x="80" y="315" width="180" height="46" rx="6" class="dark"/>
+  <text x="117" y="344" class="w">Ver catálogo</text>
+  <rect x="275" y="315" width="180" height="46" rx="6" class="box"/>
+  <text x="305" y="344" class="t b">Ver mi carrito</text>
+  <rect x="620" y="160" width="380" height="220" class="img"/>
+  <line x1="620" y1="160" x2="1000" y2="380" class="x"/>
+  <line x1="1000" y1="160" x2="620" y2="380" class="x"/>
+  <text x="705" y="275" class="s">Imagen: cesta de productos</text>
+
+  <!-- COMPRA SEGÚN TU DIETA -->
+  <text x="80" y="460" class="h2">Compra según tu dieta</text>
+  <rect x="80" y="480" width="215" height="80" rx="6" class="box"/>
+  <text x="100" y="515" class="t b">[icono] Vegano</text>
+  <text x="100" y="540" class="xs">→ catálogo</text>
+  <rect x="315" y="480" width="215" height="80" rx="6" class="box"/>
+  <text x="335" y="515" class="t b">[icono] Sin gluten</text>
+  <text x="335" y="540" class="xs">→ catálogo</text>
+  <rect x="550" y="480" width="215" height="80" rx="6" class="box"/>
+  <text x="570" y="515" class="t b">[icono] Sin lactosa</text>
+  <text x="570" y="540" class="xs">→ catálogo</text>
+  <rect x="785" y="480" width="215" height="80" rx="6" class="box"/>
+  <text x="805" y="515" class="t b">[icono] Deportivo</text>
+  <text x="805" y="540" class="xs">→ catálogo</text>
+
+  <!-- DESTACADOS -->
+  <text x="80" y="610" class="h2">Productos destacados</text>
+
+  <!-- Tarjeta destacada (ocupa 2 filas) -->
+  <rect x="80" y="630" width="450" height="400" rx="8" class="box" stroke-width="3"/>
+  <rect x="100" y="650" width="410" height="200" class="img"/>
+  <line x1="100" y1="650" x2="510" y2="850" class="x"/>
+  <line x1="510" y1="650" x2="100" y2="850" class="x"/>
+  <rect x="110" y="660" width="100" height="24" class="dark"/>
+  <text x="122" y="677" class="w" font-size="12">DESTACADO</text>
+  <text x="100" y="885" class="t b">Proteína vegana en polvo · 500 g</text>
+  <rect x="100" y="898" width="80" height="24" rx="12" class="tag"/>
+  <text x="114" y="915" class="s">✓ Vegano</text>
+  <rect x="190" y="898" width="105" height="24" rx="12" class="tag"/>
+  <text x="203" y="915" class="s">✓ Sin gluten</text>
+  <text x="100" y="950" class="s">Proteína de guisante y arroz, 24 g de proteína por ración.</text>
+  <text x="100" y="972" class="t b">19,90 €</text>
+  <rect x="100" y="985" width="160" height="34" rx="6" class="dark"/>
+  <text x="125" y="1007" class="w">Ver producto</text>
+
+  <!-- 4 tarjetas pequeñas -->
+  <g>
+    <rect x="550" y="630" width="215" height="190" rx="8" class="box"/>
+    <rect x="565" y="645" width="185" height="80" class="img"/>
+    <text x="565" y="745" class="t b">Pasta de lentejas</text>
+    <rect x="565" y="755" width="105" height="22" rx="11" class="tag"/>
+    <text x="577" y="771" class="s">✓ Sin gluten</text>
+    <text x="565" y="797" class="t b">2,49 € · 250 g</text>
+    <text x="565" y="812" class="xs">Ficha no disponible en el prototipo</text>
+  </g>
+  <g>
+    <rect x="785" y="630" width="215" height="190" rx="8" class="box"/>
+    <rect x="800" y="645" width="185" height="80" class="img"/>
+    <text x="800" y="745" class="t b">Bebida de avena</text>
+    <rect x="800" y="755" width="110" height="22" rx="11" class="tag"/>
+    <text x="811" y="771" class="s">✓ Sin lactosa</text>
+    <text x="800" y="797" class="t b">1,89 € · 1 L</text>
+    <text x="800" y="812" class="xs">Ficha no disponible en el prototipo</text>
+  </g>
+  <g>
+    <rect x="550" y="840" width="215" height="190" rx="8" class="box"/>
+    <rect x="565" y="855" width="185" height="80" class="img"/>
+    <text x="565" y="955" class="t b">Hamburguesa vegetal</text>
+    <rect x="565" y="965" width="80" height="22" rx="11" class="tag"/>
+    <text x="577" y="981" class="s">✓ Vegano</text>
+    <text x="565" y="1007" class="t b">3,25 € · 2 uds.</text>
+    <text x="565" y="1022" class="xs">Ficha no disponible en el prototipo</text>
+  </g>
+  <g>
+    <rect x="785" y="840" width="215" height="190" rx="8" class="box"/>
+    <rect x="800" y="855" width="185" height="80" class="img"/>
+    <text x="800" y="955" class="t b">Barrita proteica</text>
+    <rect x="800" y="965" width="130" height="22" rx="11" class="tag"/>
+    <text x="811" y="981" class="s">✓ Alto en proteína</text>
+    <text x="800" y="1007" class="t b">1,50 € · 60 g</text>
+    <text x="800" y="1022" class="xs">Ficha no disponible en el prototipo</text>
+  </g>
+
+  <!-- ASÍ FUNCIONA -->
+  <text x="80" y="1075" class="h2">Así funciona VitaMarket</text>
+  <rect x="80" y="1090" width="300" height="60" rx="6" class="soft"/>
+  <text x="100" y="1126" class="t">1. Busca o filtra por tu dieta</text>
+  <rect x="390" y="1090" width="300" height="60" rx="6" class="soft"/>
+  <text x="410" y="1126" class="t">2. Revisa ingredientes y alérgenos</text>
+  <rect x="700" y="1090" width="300" height="60" rx="6" class="soft"/>
+  <text x="720" y="1126" class="t">3. Programa tu entrega</text>
+
+  <!-- FOOTER -->
+  <rect x="40" y="1180" width="1000" height="110" class="soft"/>
+  <text x="80" y="1215" class="t b">⚠ Prototipo educativo: no se realizan compras ni envíos reales.</text>
+  <text x="80" y="1245" class="t">Inicio · Catálogo · Carrito · Acceder</text>
+  <text x="80" y="1272" class="s">© 2026 VitaMarket · Práctica DAW</text>
+
+  <!-- ANOTACIONES -->
+  <g>
+    <circle cx="1075" cy="88" r="12" class="num"/><text x="1071" y="93" class="numt">1</text>
+    <text x="1095" y="85" class="note">Navegación con los mismos nombres y posición</text>
+    <text x="1095" y="102" class="note">en todas las páginas. Página actual: negrita +</text>
+    <text x="1095" y="119" class="note">subrayado (no solo color).</text>
+  </g>
+  <g>
+    <circle cx="1075" cy="215" r="12" class="num"/><text x="1071" y="220" class="numt">2</text>
+    <text x="1095" y="212" class="note">Se entiende de un vistazo qué es la web</text>
+    <text x="1095" y="229" class="note">y a quién va dirigida.</text>
+  </g>
+  <g>
+    <circle cx="1075" cy="338" r="12" class="num"/><text x="1071" y="343" class="numt">3</text>
+    <text x="1095" y="335" class="note">Acción principal destacada: "Ver catálogo".</text>
+    <text x="1095" y="352" class="note">Botón secundario para el carrito (variante).</text>
+  </g>
+  <g>
+    <circle cx="1075" cy="520" r="12" class="num"/><text x="1071" y="525" class="numt">4</text>
+    <text x="1095" y="517" class="note">Atajos por dieta: enlaces al catálogo.</text>
+    <text x="1095" y="534" class="note">Fila con Flexbox (gap + flex: 1).</text>
+  </g>
+  <g>
+    <circle cx="1075" cy="700" r="12" class="num"/><text x="1071" y="705" class="numt">5</text>
+    <text x="1095" y="697" class="note">Grid: la tarjeta destacada ocupa 2 filas</text>
+    <text x="1095" y="714" class="note">(grid-row: span 2). Etiquetas con ✓ y texto,</text>
+    <text x="1095" y="731" class="note">no solo color.</text>
+  </g>
+  <g>
+    <circle cx="1075" cy="1000" r="12" class="num"/><text x="1071" y="1005" class="numt">6</text>
+    <text x="1095" y="997" class="note">Solo esta tarjeta enlaza a detalle.html.</text>
+    <text x="1095" y="1014" class="note">Las demás lo indican claramente.</text>
+  </g>
+  <g>
+    <circle cx="1075" cy="1120" r="12" class="num"/><text x="1071" y="1125" class="numt">7</text>
+    <text x="1095" y="1117" class="note">Resumen del recorrido principal.</text>
+  </g>
+  <g>
+    <circle cx="1075" cy="1235" r="12" class="num"/><text x="1071" y="1240" class="numt">8</text>
+    <text x="1095" y="1232" class="note">Aviso visible de prototipo y enlaces</text>
+    <text x="1095" y="1249" class="note">repetidos de navegación.</text>
+  </g>
+</svg>

@@ -1,0 +1,141 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 860" width="1400" height="860" font-family="Arial, Helvetica, sans-serif">
+  <style>
+    .box { fill: #ffffff; stroke: #555; stroke-width: 2; }
+    .soft { fill: #f2f2f2; stroke: #555; stroke-width: 2; }
+    .dark { fill: #555; stroke: #555; stroke-width: 2; }
+    .tag { fill: #ffffff; stroke: #555; stroke-width: 1.5; }
+    .img { fill: #e6e6e6; stroke: #777; stroke-width: 1.5; }
+    .x { stroke: #999; stroke-width: 1.5; }
+    .field { fill: #ffffff; stroke: #777; stroke-width: 1.5; }
+    .line { stroke: #bbb; stroke-width: 1; }
+    .t { fill: #222; font-size: 15px; }
+    .s { fill: #444; font-size: 13px; }
+    .xs { fill: #666; font-size: 11px; font-style: italic; }
+    .h1 { fill: #111; font-size: 30px; font-weight: bold; }
+    .h2 { fill: #111; font-size: 19px; font-weight: bold; }
+    .b { font-weight: bold; }
+    .w { fill: #ffffff; font-size: 14px; font-weight: bold; }
+    .link { fill: #222; font-size: 14px; text-decoration: underline; }
+    .note { fill: #7a3e9d; font-size: 13px; }
+    .num { fill: #7a3e9d; }
+    .numt { fill: #ffffff; font-size: 13px; font-weight: bold; }
+  </style>
+
+  <rect width="1400" height="860" fill="#ffffff"/>
+  <text x="40" y="32" class="h2" font-size="21">Boceto 4 · Carrito (carrito.html)</text>
+
+  <rect x="40" y="50" width="1000" height="790" class="box"/>
+
+  <!-- HEADER -->
+  <rect x="40" y="50" width="1000" height="80" class="soft"/>
+  <rect x="60" y="70" width="150" height="40" class="box"/>
+  <text x="80" y="96" class="t b">[logo] VitaMarket</text>
+  <text x="600" y="96" class="t">Inicio</text>
+  <text x="690" y="96" class="t">Catálogo</text>
+  <text x="790" y="96" class="t b">Carrito (2)</text>
+  <line x1="790" y1="103" x2="870" y2="103" stroke="#222" stroke-width="3"/>
+  <text x="910" y="96" class="t">Acceder</text>
+
+  <!-- PASOS DEL PEDIDO -->
+  <rect x="60" y="150" width="960" height="40" class="soft"/>
+  <text x="80" y="176" class="t b">① Carrito (paso actual)</text>
+  <text x="320" y="176" class="t">›   ② Acceso</text>
+  <text x="480" y="176" class="t">›   ③ Datos de entrega</text>
+
+  <!-- TÍTULO + AVISO -->
+  <text x="60" y="240" class="h1">Tu carrito</text>
+  <rect x="60" y="255" width="960" height="34" class="soft" stroke-dasharray="6 4"/>
+  <text x="75" y="277" class="s b">⚠ Prototipo: los cambios de cantidad y la eliminación de productos todavía no actualizan el carrito ni los importes.</text>
+
+  <!-- CABECERA DE COLUMNAS -->
+  <text x="75" y="320" class="s b">Producto</text>
+  <text x="365" y="320" class="s b">Precio unidad</text>
+  <text x="475" y="320" class="s b">Cantidad</text>
+  <text x="595" y="320" class="s b">Subtotal</text>
+  <line x1="60" y1="330" x2="680" y2="330" class="line"/>
+
+  <!-- FILA 1 -->
+  <rect x="60" y="340" width="620" height="120" rx="6" class="box"/>
+  <rect x="75" y="355" width="90" height="90" class="img"/>
+  <line x1="75" y1="355" x2="165" y2="445" class="x"/><line x1="165" y1="355" x2="75" y2="445" class="x"/>
+  <text x="180" y="378" class="t b">Proteína vegana</text>
+  <text x="180" y="396" class="s">en polvo · 500 g</text>
+  <rect x="180" y="404" width="68" height="20" rx="10" class="tag"/><text x="188" y="418" class="s" font-size="11">✓ Vegano</text>
+  <rect x="180" y="430" width="80" height="24" rx="5" class="box"/><text x="193" y="447" class="s">Eliminar</text>
+  <text x="365" y="400" class="t">19,90 €</text>
+  <rect x="475" y="382" width="28" height="30" rx="4" class="box"/><text x="484" y="402" class="t b">−</text>
+  <rect x="507" y="382" width="36" height="30" class="field"/><text x="520" y="402" class="t">1</text>
+  <rect x="547" y="382" width="28" height="30" rx="4" class="box"/><text x="555" y="402" class="t b">+</text>
+  <text x="595" y="400" class="t b">19,90 €</text>
+
+  <!-- FILA 2 -->
+  <rect x="60" y="475" width="620" height="120" rx="6" class="box"/>
+  <rect x="75" y="490" width="90" height="90" class="img"/>
+  <line x1="75" y1="490" x2="165" y2="580" class="x"/><line x1="165" y1="490" x2="75" y2="580" class="x"/>
+  <text x="180" y="513" class="t b">Pasta de lentejas</text>
+  <text x="180" y="531" class="s">250 g</text>
+  <rect x="180" y="539" width="88" height="20" rx="10" class="tag"/><text x="188" y="553" class="s" font-size="11">✓ Sin gluten</text>
+  <rect x="180" y="565" width="80" height="24" rx="5" class="box"/><text x="193" y="582" class="s">Eliminar</text>
+  <text x="365" y="535" class="t">2,49 €</text>
+  <rect x="475" y="517" width="28" height="30" rx="4" class="box"/><text x="484" y="537" class="t b">−</text>
+  <rect x="507" y="517" width="36" height="30" class="field"/><text x="520" y="537" class="t">3</text>
+  <rect x="547" y="517" width="28" height="30" rx="4" class="box"/><text x="555" y="537" class="t b">+</text>
+  <text x="595" y="535" class="t b">7,47 €</text>
+
+  <text x="60" y="635" class="link">← Seguir comprando</text>
+
+  <!-- RESUMEN DEL PEDIDO -->
+  <rect x="700" y="310" width="320" height="300" rx="8" class="box" stroke-width="3"/>
+  <text x="720" y="345" class="h2">Resumen del pedido</text>
+  <text x="720" y="385" class="t">Subtotal (4 artículos)</text><text x="935" y="385" class="t">27,37 €</text>
+  <text x="720" y="415" class="t">Gastos de envío</text><text x="943" y="415" class="t">3,99 €</text>
+  <text x="720" y="435" class="xs">Envío gratis a partir de 40 €</text>
+  <line x1="720" y1="452" x2="1000" y2="452" class="line"/>
+  <text x="720" y="485" class="h2">Total</text><text x="915" y="485" class="h2">31,36 €</text>
+  <rect x="720" y="510" width="280" height="46" rx="6" class="dark"/>
+  <text x="770" y="539" class="w">Continuar con la entrega</text>
+  <text x="720" y="585" class="xs">Siguiente paso: acceso a tu cuenta (demostración)</text>
+
+  <!-- FOOTER -->
+  <rect x="40" y="730" width="1000" height="110" class="soft"/>
+  <text x="80" y="765" class="t b">⚠ Prototipo educativo: no se realizan compras ni envíos reales.</text>
+  <text x="80" y="795" class="t">Inicio · Catálogo · Carrito · Acceder</text>
+  <text x="80" y="822" class="s">© 2026 VitaMarket · Práctica DAW</text>
+
+  <!-- ANOTACIONES -->
+  <g>
+    <circle cx="1075" cy="88" r="12" class="num"/><text x="1071" y="93" class="numt">1</text>
+    <text x="1095" y="85" class="note">Página actual: "Carrito".</text>
+  </g>
+  <g>
+    <circle cx="1075" cy="170" r="12" class="num"/><text x="1071" y="175" class="numt">2</text>
+    <text x="1095" y="167" class="note">Pasos del pedido: el usuario sabe en qué</text>
+    <text x="1095" y="184" class="note">paso está y qué le queda (texto, no color).</text>
+  </g>
+  <g>
+    <circle cx="1075" cy="272" r="12" class="num"/><text x="1071" y="277" class="numt">3</text>
+    <text x="1095" y="269" class="note">Aviso de lo que es solo prototipo.</text>
+  </g>
+  <g>
+    <circle cx="1075" cy="400" r="12" class="num"/><text x="1071" y="405" class="numt">4</text>
+    <text x="1095" y="397" class="note">Cada fila con Flexbox: identificación,</text>
+    <text x="1095" y="414" class="note">precio unidad, cantidad, subtotal y</text>
+    <text x="1095" y="431" class="note">"Eliminar". Botones type="button" y</text>
+    <text x="1095" y="448" class="note">cantidad con etiqueta (aunque sea oculta).</text>
+  </g>
+  <g>
+    <circle cx="1075" cy="535" r="12" class="num"/><text x="1071" y="540" class="numt">5</text>
+    <text x="1095" y="532" class="note">Acción principal: "Continuar con la</text>
+    <text x="1095" y="549" class="note">entrega" → login.html. Dice qué pasará.</text>
+  </g>
+  <g>
+    <circle cx="1075" cy="630" r="12" class="num"/><text x="1071" y="635" class="numt">6</text>
+    <text x="1095" y="627" class="note">Volver a explorar el catálogo:</text>
+    <text x="1095" y="644" class="note">no hay página sin salida.</text>
+  </g>
+  <g>
+    <circle cx="1075" cy="345" r="12" class="num"/><text x="1071" y="350" class="numt">7</text>
+    <text x="1095" y="342" class="note">Resumen: subtotal, envío y total.</text>
+    <text x="1095" y="359" class="note">Disposición con Grid: lista | resumen.</text>
+  </g>
+</svg>
