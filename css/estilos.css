@@ -3,11 +3,13 @@
    ========================================= */
 :root {
   --verde-oscuro: #2f5d34;
+  --verde-hover: #24482a;
   --verde-claro: #e8f3e4;
   --texto: #222222;
   --texto-suave: #555555;
   --fondo: #ffffff;
   --borde: #cccccc;
+  --foco: #1a4fa3;
 }
 
 /* =========================================
@@ -51,4 +53,305 @@ main {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 2rem;
+}
+
+/* Separación entre las secciones del main */
+main > section {
+  margin-bottom: 3rem;
+}
+
+/* =========================================
+   4. FOCO VISIBLE (teclado)
+   ========================================= */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: 3px solid var(--foco);
+  outline-offset: 3px;
+}
+
+/* =========================================
+   5. CABECERA Y MENÚ (Flexbox)
+   ========================================= */
+.cabecera {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--verde-claro);
+  padding: 1rem 2rem;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu a {
+  display: inline-block;
+  padding: 0.25rem 0;
+  color: var(--texto);
+  text-decoration: none;
+  border-bottom: 3px solid transparent;
+}
+
+.menu a:hover {
+  border-bottom-color: var(--borde);
+}
+
+/* Página actual: negrita + línea inferior, no solo color */
+.menu a[aria-current="page"] {
+  font-weight: bold;
+  color: var(--verde-oscuro);
+  border-bottom-color: var(--verde-oscuro);
+}
+
+/* =========================================
+   6. BOTONES (componente + variante)
+   ========================================= */
+.boton {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  border: 2px solid var(--verde-oscuro);
+  border-radius: 6px;
+  background-color: var(--verde-oscuro);
+  color: #ffffff;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.boton:hover {
+  background-color: var(--verde-hover);
+  border-color: var(--verde-hover);
+}
+
+/* Variante: botón secundario */
+.boton-secundario {
+  background-color: transparent;
+  color: var(--verde-oscuro);
+}
+
+.boton-secundario:hover {
+  background-color: var(--verde-claro);
+  border-color: var(--verde-oscuro);
+}
+
+/* Grupo de botones (Flexbox con flex-wrap) */
+.acciones {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+/* =========================================
+   7. PRESENTACIÓN (Grid con áreas)
+   ========================================= */
+.presentacion {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "texto imagen";
+  gap: 2rem;
+  align-items: center;
+  padding-top: 3rem;
+}
+
+.presentacion-texto {
+  grid-area: texto;
+}
+
+.presentacion img {
+  grid-area: imagen;
+  border-radius: 12px;
+}
+
+.presentacion h1 {
+  font-size: 2.5rem;
+  margin-top: 0;
+}
+
+/* =========================================
+   8. COMPRA SEGÚN TU DIETA (Flexbox)
+   ========================================= */
+.lista-categorias {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.lista-categorias li {
+  flex: 1;
+}
+
+.lista-categorias a {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1rem;
+  border: 2px solid var(--borde);
+  border-radius: 8px;
+  color: var(--texto);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.lista-categorias a:hover {
+  border-color: var(--verde-oscuro);
+  background-color: var(--verde-claro);
+}
+
+.lista-categorias img {
+  width: 48px;
+}
+
+/* =========================================
+   9. PRODUCTOS DESTACADOS (Grid)
+   ========================================= */
+.rejilla-destacados {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1.5rem;
+}
+
+/* =========================================
+   10. TARJETAS (componente + variante)
+   ========================================= */
+.tarjeta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 1rem;
+  border: 1px solid var(--borde);
+  border-radius: 8px;
+  background-color: var(--fondo);
+}
+
+.tarjeta h3,
+.tarjeta p {
+  margin: 0;
+}
+
+.tarjeta img {
+  border-radius: 6px;
+}
+
+/* Variante: tarjeta destacada, ocupa 2 columnas y 2 filas */
+.tarjeta-destacada {
+  grid-column: span 2;
+  grid-row: span 2;
+  border: 3px solid var(--verde-oscuro);
+}
+
+.tarjeta-destacada .precio {
+  font-size: 1.75rem;
+}
+
+.tarjeta .boton {
+  align-self: flex-start;
+  margin-top: auto;
+}
+
+.distintivo {
+  align-self: flex-start;
+  padding: 0.25rem 0.75rem;
+  border-radius: 4px;
+  background-color: var(--verde-oscuro);
+  color: #ffffff;
+  font-size: 0.8rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.etiquetas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.etiquetas li {
+  padding: 0.2rem 0.75rem;
+  border: 1px solid var(--verde-oscuro);
+  border-radius: 999px;
+  background-color: var(--verde-claro);
+  color: var(--verde-oscuro);
+  font-size: 0.875rem;
+}
+
+.precio {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.aviso-ficha {
+  margin-top: auto;
+  color: var(--texto-suave);
+  font-size: 0.875rem;
+  font-style: italic;
+}
+
+/* =========================================
+   11. ASÍ FUNCIONA (Flexbox)
+   ========================================= */
+.pasos {
+  display: flex;
+  gap: 1rem;
+  list-style-position: inside;
+  margin: 0;
+  padding: 0;
+}
+
+.pasos li {
+  flex: 1;
+  padding: 1rem;
+  border-radius: 8px;
+  background-color: var(--verde-claro);
+  font-weight: bold;
+}
+
+/* =========================================
+   12. PIE DE PÁGINA
+   ========================================= */
+.pie {
+  padding: 2rem;
+  background-color: var(--verde-oscuro);
+  color: #ffffff;
+  text-align: center;
+}
+
+.pie a {
+  color: #ffffff;
+}
+
+/* Sobre fondo oscuro, el foco azul no se vería: lo cambiamos a blanco */
+.pie a:focus-visible {
+  outline-color: #ffffff;
+}
+
+.menu-pie {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  list-style: none;
+  margin: 1rem 0;
+  padding: 0;
 }
