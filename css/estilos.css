@@ -877,3 +877,46 @@ legend {
   color: var(--texto-suave);
   font-size: 0.875rem;
 }
+
+/* =========================================
+   21. FORMULARIO DE ENTREGA
+   ========================================= */
+
+/* Formulario | resumen */
+.pagina-formulario {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 300px;
+  gap: 2rem;
+  align-items: start;
+  margin-top: 1.5rem;
+}
+
+.campo-corto {
+  max-width: 14rem;
+}
+
+/* Fecha y franja, una al lado de la otra */
+.fila-campos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.fila-campos .campo {
+  flex: 1;
+  min-width: 200px;
+}
+
+/* Un fieldset dentro de otro: menos espacio */
+fieldset fieldset {
+  margin-bottom: 1rem;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.resumen-productos {
+  margin: 0 0 1rem;
+  padding-left: 1.25rem;
+}

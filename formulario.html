@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Datos de entrega · VitaMarket</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+  <header class="cabecera">
+    <a href="index.html" class="logo">VitaMarket</a>
+    <nav aria-label="Principal">
+      <ul class="menu">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="catalogo.html">Catálogo</a></li>
+        <li><a href="carrito.html">Carrito (2)</a></li>
+        <li><a href="login.html">Acceder</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <nav class="pasos-pedido" aria-label="Pasos del pedido">
+      <ol>
+        <li>Paso 1 de 3: Carrito</li>
+        <li>Paso 2 de 3: Acceso</li>
+        <li aria-current="step">Paso 3 de 3: Datos de entrega</li>
+      </ol>
+    </nav>
+
+    <h1>Datos de entrega</h1>
+
+    <p class="aviso" id="aviso-prototipo">
+      <strong>Prototipo:</strong> esta solicitud de entrega es una demostración.
+      No se envía, no se guarda y no se realiza ningún pago. No uses datos reales.
+    </p>
+
+    <div class="pagina-formulario">
+
+      <form action="formulario.html#aviso-prototipo" method="get" class="formulario-entrega">
+
+        <p>Los campos marcados con <span aria-hidden="true">*</span> son obligatorios.</p>
+
+        <!-- DATOS DE CONTACTO -->
+        <fieldset>
+          <legend>Datos de contacto</legend>
+
+          <div class="campo">
+            <label for="nombre">Nombre completo <span aria-hidden="true">*</span></label>
+            <input type="text" id="nombre" required>
+          </div>
+
+          <div class="campo">
+            <label for="correo">Correo electrónico <span aria-hidden="true">*</span></label>
+            <input type="email" id="correo" required placeholder="nombre@ejemplo.com">
+          </div>
+
+          <div class="campo">
+            <label for="telefono">Teléfono <span aria-hidden="true">*</span></label>
+            <input type="tel" id="telefono" required pattern="[0-9]{9}"
+                   aria-describedby="ayuda-telefono" class="campo-corto">
+            <p id="ayuda-telefono" class="instrucciones">9 cifras sin espacios. Ejemplo: 612345678.</p>
+          </div>
+        </fieldset>
+
+        <!-- ENTREGA -->
+        <fieldset>
+          <legend>Entrega</legend>
+
+          <fieldset>
+            <legend>Tipo de entrega <span aria-hidden="true">*</span></legend>
+            <div class="opcion">
+              <input type="radio" id="entrega-domicilio" name="entrega" value="domicilio" required>
+              <label for="entrega-domicilio">A domicilio (3,99 €)</label>
+            </div>
+            <div class="opcion">
+              <input type="radio" id="entrega-tienda" name="entrega" value="tienda">
+              <label for="entrega-tienda">Recogida en tienda (gratis)</label>
+            </div>
+          </fieldset>
+
+          <div class="campo">
+            <label for="direccion">Dirección (solo para entrega a domicilio)</label>
+            <input type="text" id="direccion" placeholder="Calle, número, piso">
+          </div>
+
+          <div class="campo">
+            <label for="codigo-postal">Código postal (solo para entrega a domicilio)</label>
+            <input type="text" id="codigo-postal" pattern="[0-9]{5}" inputmode="numeric"
+                   aria-describedby="ayuda-cp" class="campo-corto">
+            <p id="ayuda-cp" class="instrucciones">5 cifras. Ejemplo: 28001.</p>
+          </div>
+
+          <div class="fila-campos">
+            <div class="campo">
+              <label for="fecha">Fecha de entrega <span aria-hidden="true">*</span></label>
+              <input type="date" id="fecha" required min="2026-11-09"
+                     aria-describedby="ayuda-fecha">
+              <p id="ayuda-fecha" class="instrucciones">Entregas a partir del 09/11/2026.</p>
+            </div>
+
+            <div class="campo">
+              <label for="franja">Franja horaria <span aria-hidden="true">*</span></label>
+              <select id="franja" required>
+                <option value="">Elige una franja</option>
+                <option value="manana">Mañana (9:00–14:00)</option>
+                <option value="tarde">Tarde (16:00–21:00)</option>
+              </select>
+            </div>
+          </div>
+        </fieldset>
+
+        <!-- PREFERENCIAS -->
+        <fieldset>
+          <legend>Preferencias (opcional)</legend>
+
+          <div class="opcion">
+            <input type="checkbox" id="sustituir">
+            <label for="sustituir">
+              Si un producto está agotado, sustituirlo por otro con las mismas
+              características (por ejemplo, sin gluten)
+            </label>
+          </div>
+
+          <div class="campo">
+            <label for="instrucciones-reparto">Instrucciones para el repartidor</label>
+            <textarea id="instrucciones-reparto" rows="3" maxlength="300"
+                      aria-describedby="ayuda-reparto"
+                      placeholder="Ej.: llamar al timbre 2.º B"></textarea>
+            <p id="ayuda-reparto" class="instrucciones">Máximo 300 caracteres.</p>
+          </div>
+        </fieldset>
+
+        <div class="acciones">
+          <button type="submit" class="boton boton-grande">Solicitar entrega</button>
+          <a href="carrito.html" class="boton boton-secundario boton-grande">← Volver al carrito</a>
+        </div>
+
+      </form>
+
+      <!-- RESUMEN DEL PEDIDO -->
+      <aside class="resumen" aria-labelledby="titulo-pedido">
+        <h2 id="titulo-pedido">Tu pedido</h2>
+        <ul class="resumen-productos">
+          <li>Proteína vegana × 1</li>
+          <li>Pasta de lentejas × 3</li>
+        </ul>
+        <p class="resumen-total">Total: 31,36 €</p>
+        <p class="aviso-ficha">Incluye envío a domicilio.</p>
+        <a href="carrito.html">Modificar carrito</a>
+      </aside>
+
+    </div>
+
+  </main>
+
+  <footer class="pie">
+    <p><strong>Prototipo educativo:</strong> no se realizan compras ni envíos reales.</p>
+    <nav aria-label="Pie de página">
+      <ul class="menu-pie">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="catalogo.html">Catálogo</a></li>
+        <li><a href="carrito.html">Carrito</a></li>
+        <li><a href="login.html">Acceder</a></li>
+      </ul>
+    </nav>
+    <p>© 2026 VitaMarket · Práctica DAW</p>
+  </footer>
+
+</body>
+</html>
