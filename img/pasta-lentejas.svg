@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 450" width="600" height="450">
+  <rect width="600" height="450" fill="#fbf1dc"/>
+  <circle cx="480" cy="90" r="120" fill="#f6e6c3"/>
+  <circle cx="90" cy="400" r="110" fill="#f6e6c3"/>
+  <ellipse cx="300" cy="392" rx="190" ry="22" fill="#ecd7a8"/>
+
+  <!-- Paquete -->
+  <path d="M205 95 L395 95 L385 120 L215 120 Z" fill="#d9822b"/>
+  <path d="M215 120 H385 L400 380 Q401 392 389 392 H211 Q199 392 200 380 Z" fill="#f0a35e"/>
+  <!-- Ventana con pasta -->
+  <rect x="235" y="150" width="130" height="90" rx="40" fill="#fff6e6"/>
+  <g stroke="#e07b4a" stroke-width="8" fill="none" stroke-linecap="round">
+    <path d="M255 175 q8 -10 16 0 q8 10 16 0"/>
+    <path d="M300 200 q8 -10 16 0 q8 10 16 0"/>
+    <path d="M250 215 q8 -10 16 0 q8 10 16 0"/>
+    <path d="M310 168 q8 -10 16 0"/>
+  </g>
+  <text x="300" y="275" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="bold" fill="#ffffff">PASTA DE</text>
+  <text x="300" y="299" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="bold" fill="#ffffff">LENTEJAS</text>
+  <rect x="245" y="315" width="110" height="28" rx="14" fill="#ffffff"/>
+  <text x="300" y="334" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="bold" fill="#d9822b">Sin gluten</text>
+  <text x="300" y="368" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#fff6e6">250 g</text>
+
+  <!-- Pasta suelta -->
+  <g stroke="#e07b4a" stroke-width="9" fill="none" stroke-linecap="round">
+    <path d="M425 365 q9 -12 18 0 q9 12 18 0"/>
+    <path d="M150 370 q9 -12 18 0 q9 12 18 0"/>
+    <path d="M440 335 q9 -12 18 0"/>
+  </g>
+</svg>

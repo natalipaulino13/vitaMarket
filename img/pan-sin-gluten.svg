@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 450" width="600" height="450">
+  <rect width="600" height="450" fill="#f8eedd"/>
+  <circle cx="480" cy="90" r="120" fill="#f1e0c2"/>
+  <circle cx="90" cy="400" r="110" fill="#f1e0c2"/>
+  <ellipse cx="300" cy="388" rx="220" ry="22" fill="#e6cfa6"/>
+
+  <!-- Pan de molde -->
+  <path d="M130 385 V200 Q130 150 180 150 Q200 115 245 130 Q290 105 330 130 Q375 115 395 150 Q440 150 440 200 V385 Z" fill="#d49a5a"/>
+  <path d="M150 385 V210 Q150 175 190 175 Q210 148 248 160 Q290 138 328 160 Q368 148 385 175 Q420 175 420 210 V385 Z" fill="#f5e3c2"/>
+  <!-- Rebanadas -->
+  <line x1="215" y1="170" x2="215" y2="385" stroke="#e8cfa3" stroke-width="3"/>
+  <line x1="285" y1="150" x2="285" y2="385" stroke="#e8cfa3" stroke-width="3"/>
+  <line x1="355" y1="165" x2="355" y2="385" stroke="#e8cfa3" stroke-width="3"/>
+
+  <!-- Etiqueta -->
+  <rect x="200" y="255" width="170" height="70" rx="12" fill="#ffffff"/>
+  <text x="285" y="284" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="bold" fill="#a86f34">PAN DE MOLDE</text>
+  <text x="285" y="308" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#a86f34">Sin gluten · 400 g</text>
+
+  <!-- Rebanada suelta -->
+  <path d="M455 385 V300 Q455 275 478 275 Q490 258 510 266 Q532 258 540 278 Q560 280 560 302 V385 Z" fill="#d49a5a"/>
+  <path d="M465 385 V305 Q465 287 482 287 Q493 273 510 280 Q528 273 535 289 Q550 291 550 307 V385 Z" fill="#f5e3c2"/>
+</svg>

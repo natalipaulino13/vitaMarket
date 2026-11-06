@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 450" width="600" height="450">
+  <rect width="600" height="450" fill="#e8f3e4"/>
+  <circle cx="480" cy="80" r="130" fill="#d6eacf"/>
+  <circle cx="80" cy="410" r="120" fill="#d6eacf"/>
+  <ellipse cx="300" cy="395" rx="220" ry="22" fill="#c4dcbc"/>
+
+  <!-- Brick de bebida vegetal (detrás) -->
+  <path d="M355 120 L415 120 L415 145 L385 125 L355 145 Z" fill="#cfe1ee"/>
+  <rect x="355" y="145" width="60" height="140" fill="#eaf3fa"/>
+  <rect x="362" y="185" width="46" height="55" rx="6" fill="#7aa6c4"/>
+  <text x="385" y="217" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="bold" fill="#ffffff">AVENA</text>
+
+  <!-- Lechuga -->
+  <circle cx="230" cy="200" r="48" fill="#8cc47a"/>
+  <circle cx="200" cy="215" r="38" fill="#a9d39c"/>
+  <circle cx="262" cy="218" r="36" fill="#a9d39c"/>
+  <path d="M230 170 Q236 205 230 240" stroke="#6ea65e" stroke-width="3" fill="none"/>
+
+  <!-- Zanahorias -->
+  <path d="M300 150 L318 255 L284 255 Z" fill="#f0a35e"/>
+  <path d="M300 150 Q290 125 278 120 M300 150 Q302 122 300 112 M300 150 Q312 125 324 120" stroke="#6ea65e" stroke-width="5" fill="none" stroke-linecap="round"/>
+  <path d="M330 175 L344 255 L316 255 Z" fill="#e8924a"/>
+  <path d="M330 175 Q322 155 312 152 M330 175 Q334 152 342 148" stroke="#6ea65e" stroke-width="5" fill="none" stroke-linecap="round"/>
+
+  <!-- Manzana -->
+  <circle cx="175" cy="262" r="30" fill="#e57373"/>
+  <path d="M175 235 Q178 222 186 218" stroke="#7a5a3c" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <path d="M180 232 Q195 222 200 232 Q188 240 180 232 Z" fill="#8cc47a"/>
+
+  <!-- Cesta -->
+  <path d="M130 255 H470 L440 385 Q437 395 425 395 H175 Q163 395 160 385 Z" fill="#c99a6b"/>
+  <rect x="122" y="245" width="356" height="24" rx="12" fill="#b0845a"/>
+  <line x1="165" y1="300" x2="455" y2="300" stroke="#b0845a" stroke-width="4"/>
+  <line x1="172" y1="340" x2="447" y2="340" stroke="#b0845a" stroke-width="4"/>
+  <line x1="220" y1="270" x2="230" y2="395" stroke="#b0845a" stroke-width="4"/>
+  <line x1="300" y1="270" x2="300" y2="395" stroke="#b0845a" stroke-width="4"/>
+  <line x1="380" y1="270" x2="370" y2="395" stroke="#b0845a" stroke-width="4"/>
+  <!-- Asa -->
+  <path d="M180 250 Q300 40 420 250" stroke="#b0845a" stroke-width="12" fill="none" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 450" width="600" height="450">
+  <rect width="600" height="450" fill="#fbe9dd"/>
+  <circle cx="480" cy="90" r="120" fill="#f6dccb"/>
+  <circle cx="90" cy="400" r="110" fill="#f6dccb"/>
+
+  <!-- Plato -->
+  <ellipse cx="300" cy="300" rx="230" ry="95" fill="#ffffff"/>
+  <ellipse cx="300" cy="300" rx="185" ry="72" fill="#f7f3ea"/>
+
+  <!-- Hamburguesa 1 -->
+  <ellipse cx="235" cy="300" rx="85" ry="38" fill="#7f8f4e"/>
+  <ellipse cx="235" cy="290" rx="85" ry="38" fill="#9aab5e"/>
+  <g fill="#5f7a3a">
+    <circle cx="205" cy="282" r="5"/><circle cx="240" cy="275" r="4"/>
+    <circle cx="265" cy="295" r="5"/><circle cx="220" cy="302" r="4"/>
+    <circle cx="190" cy="298" r="3"/>
+  </g>
+  <g fill="#e6c98a">
+    <circle cx="228" cy="288" r="4"/><circle cx="255" cy="280" r="3"/><circle cx="200" cy="292" r="3"/>
+  </g>
+
+  <!-- Hamburguesa 2 -->
+  <ellipse cx="375" cy="290" rx="85" ry="38" fill="#7f8f4e"/>
+  <ellipse cx="375" cy="280" rx="85" ry="38" fill="#9aab5e"/>
+  <g fill="#5f7a3a">
+    <circle cx="345" cy="272" r="5"/><circle cx="380" cy="265" r="4"/>
+    <circle cx="405" cy="285" r="5"/><circle cx="360" cy="292" r="4"/>
+    <circle cx="420" cy="268" r="3"/>
+  </g>
+  <g fill="#e6c98a">
+    <circle cx="368" cy="278" r="4"/><circle cx="395" cy="270" r="3"/><circle cx="340" cy="284" r="3"/>
+  </g>
+
+  <!-- Hojas de espinaca -->
+  <path d="M120 180 C150 140 200 150 205 190 C170 205 135 205 120 180 Z" fill="#6ea65e"/>
+  <path d="M125 182 Q165 178 200 190" stroke="#4f8a43" stroke-width="3" fill="none"/>
+  <path d="M440 150 C470 120 515 135 510 175 C478 182 450 178 440 150 Z" fill="#8cc47a"/>
+  <path d="M445 152 Q480 155 507 173" stroke="#6ea65e" stroke-width="3" fill="none"/>
+  <!-- Garbanzos -->
+  <circle cx="480" cy="380" r="12" fill="#e6c98a"/>
+  <circle cx="505" cy="372" r="10" fill="#e6c98a"/>
+  <circle cx="110" cy="360" r="11" fill="#e6c98a"/>
+</svg>
