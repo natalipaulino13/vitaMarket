@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tu carrito · VitaMarket</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+  <header class="cabecera">
+    <a href="index.html" class="logo">VitaMarket</a>
+    <nav aria-label="Principal">
+      <ul class="menu">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="catalogo.html">Catálogo</a></li>
+        <li><a href="carrito.html" aria-current="page">Carrito (2)</a></li>
+        <li><a href="login.html">Acceder</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- PASOS DEL PEDIDO -->
+    <nav class="pasos-pedido" aria-label="Pasos del pedido">
+      <ol>
+        <li aria-current="step">Paso 1 de 3: Carrito</li>
+        <li>Paso 2 de 3: Acceso</li>
+        <li>Paso 3 de 3: Datos de entrega</li>
+      </ol>
+    </nav>
+
+    <h1>Tu carrito</h1>
+
+    <p class="aviso">
+      <strong>Prototipo:</strong> los cambios de cantidad y la eliminación de
+      productos todavía no actualizan el carrito ni los importes.
+    </p>
+
+    <div class="carrito">
+
+      <!-- PRODUCTOS -->
+      <section aria-labelledby="titulo-productos">
+        <h2 id="titulo-productos">Productos seleccionados</h2>
+
+        <ul class="lista-carrito">
+
+          <li class="fila-carrito">
+            <img src="img/proteina-vegana.svg" alt="">
+            <div class="fila-producto">
+              <h3>Proteína vegana en polvo</h3>
+              <p>500 g · Sabor cacao</p>
+              <button type="button" class="boton boton-secundario boton-pequeno"
+                      aria-label="Eliminar Proteína vegana del carrito">Eliminar</button>
+            </div>
+            <p class="fila-dato">
+              <span class="fila-etiqueta">Precio unidad</span>
+              19,90 €
+            </p>
+            <div class="fila-dato">
+              <label for="cantidad-proteina" class="fila-etiqueta">Cantidad</label>
+              <div class="cantidad">
+                <button type="button" class="boton-cantidad"
+                        aria-label="Reducir cantidad de Proteína vegana">−</button>
+                <input type="number" id="cantidad-proteina" value="1" min="1" max="10">
+                <button type="button" class="boton-cantidad"
+                        aria-label="Aumentar cantidad de Proteína vegana">+</button>
+              </div>
+            </div>
+            <p class="fila-dato">
+              <span class="fila-etiqueta">Subtotal</span>
+              <strong>19,90 €</strong>
+            </p>
+          </li>
+
+          <li class="fila-carrito">
+            <img src="img/pasta-lentejas.svg" alt="">
+            <div class="fila-producto">
+              <h3>Pasta de lentejas</h3>
+              <p>250 g · Sin gluten</p>
+              <button type="button" class="boton boton-secundario boton-pequeno"
+                      aria-label="Eliminar Pasta de lentejas del carrito">Eliminar</button>
+            </div>
+            <p class="fila-dato">
+              <span class="fila-etiqueta">Precio unidad</span>
+              2,49 €
+            </p>
+            <div class="fila-dato">
+              <label for="cantidad-pasta" class="fila-etiqueta">Cantidad</label>
+              <div class="cantidad">
+                <button type="button" class="boton-cantidad"
+                        aria-label="Reducir cantidad de Pasta de lentejas">−</button>
+                <input type="number" id="cantidad-pasta" value="3" min="1" max="10">
+                <button type="button" class="boton-cantidad"
+                        aria-label="Aumentar cantidad de Pasta de lentejas">+</button>
+              </div>
+            </div>
+            <p class="fila-dato">
+              <span class="fila-etiqueta">Subtotal</span>
+              <strong>7,47 €</strong>
+            </p>
+          </li>
+
+        </ul>
+
+        <a href="catalogo.html" class="volver">← Seguir comprando</a>
+      </section>
+
+      <!-- RESUMEN -->
+      <section class="resumen" aria-labelledby="titulo-resumen">
+        <h2 id="titulo-resumen">Resumen del pedido</h2>
+
+        <dl>
+          <div class="resumen-linea">
+            <dt>Subtotal (4 artículos)</dt>
+            <dd>27,37 €</dd>
+          </div>
+          <div class="resumen-linea">
+            <dt>Gastos de envío</dt>
+            <dd>3,99 €</dd>
+          </div>
+          <div class="resumen-linea resumen-total">
+            <dt>Total</dt>
+            <dd>31,36 €</dd>
+          </div>
+        </dl>
+
+        <p class="aviso-ficha">Envío gratis a partir de 40 €.</p>
+
+        <a href="login.html" class="boton boton-grande boton-ancho">Continuar con la entrega</a>
+        <p class="aviso-ficha">Siguiente paso: acceso a tu cuenta (demostración).</p>
+      </section>
+
+    </div>
+
+  </main>
+
+  <footer class="pie">
+    <p><strong>Prototipo educativo:</strong> no se realizan compras ni envíos reales.</p>
+    <nav aria-label="Pie de página">
+      <ul class="menu-pie">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="catalogo.html">Catálogo</a></li>
+        <li><a href="carrito.html">Carrito</a></li>
+        <li><a href="login.html">Acceder</a></li>
+      </ul>
+    </nav>
+    <p>© 2026 VitaMarket · Práctica DAW</p>
+  </footer>
+
+</body>
+</html>

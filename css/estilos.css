@@ -694,3 +694,164 @@ legend {
 .tabla-nutricional .fila-destacada td {
   font-weight: bold;
 }
+
+
+/* =========================================
+   18. PASOS DEL PEDIDO
+   ========================================= */
+.pasos-pedido ol {
+  display: flex;
+  gap: 0.5rem;
+  list-style: none;
+  margin: 1.5rem 0 0;
+  padding: 0;
+}
+
+.pasos-pedido li {
+  flex: 1;
+  padding: 0.6rem 1rem;
+  border-bottom: 4px solid var(--borde);
+  color: var(--texto-suave);
+}
+
+/* Paso actual: negrita + línea gruesa + color, no solo color */
+.pasos-pedido li[aria-current="step"] {
+  border-bottom-color: var(--verde-oscuro);
+  background-color: var(--verde-claro);
+  color: var(--verde-oscuro);
+  font-weight: bold;
+}
+
+/* =========================================
+   19. CARRITO
+   ========================================= */
+
+/* Lista de productos | resumen */
+.carrito {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 320px;
+  gap: 2rem;
+  align-items: start;
+}
+
+.lista-carrito {
+  list-style: none;
+  margin: 0 0 1.5rem;
+  padding: 0;
+}
+
+/* Cada fila con Flexbox */
+.fila-carrito {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1.25rem;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border: 1px solid var(--borde);
+  border-radius: 8px;
+}
+
+.fila-carrito img {
+  flex: none;
+  width: 90px;
+  border-radius: 6px;
+}
+
+.fila-producto {
+  flex: 1;
+  min-width: 150px;
+}
+
+.fila-producto h3,
+.fila-producto p {
+  margin: 0 0 0.4rem;
+}
+
+.fila-dato {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  margin: 0;
+}
+
+.fila-etiqueta {
+  color: var(--texto-suave);
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+/* Variante de botón: pequeño */
+.boton-pequeno {
+  padding: 0.3rem 0.75rem;
+  font-size: 0.875rem;
+}
+
+/* Variante de botón: ocupa todo el ancho */
+.boton-ancho {
+  display: block;
+  text-align: center;
+}
+
+/* Control de cantidad: − [ 1 ] + */
+.cantidad {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.cantidad input {
+  width: 4rem;
+  text-align: center;
+}
+
+.boton-cantidad {
+  width: 2.25rem;
+  height: 2.25rem;
+  border: 2px solid var(--verde-oscuro);
+  border-radius: 6px;
+  background-color: var(--fondo);
+  color: var(--verde-oscuro);
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.boton-cantidad:hover {
+  background-color: var(--verde-claro);
+}
+
+/* Resumen del pedido */
+.resumen {
+  padding: 1.25rem;
+  border: 3px solid var(--verde-oscuro);
+  border-radius: 8px;
+}
+
+.resumen h2 {
+  margin-top: 0;
+  font-size: 1.3rem;
+}
+
+.resumen dl {
+  margin: 0 0 1rem;
+}
+
+.resumen-linea {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid var(--borde);
+}
+
+.resumen-linea dd {
+  margin: 0;
+}
+
+.resumen-total {
+  border-bottom: none;
+  color: var(--verde-oscuro);
+  font-size: 1.3rem;
+  font-weight: bold;
+}
