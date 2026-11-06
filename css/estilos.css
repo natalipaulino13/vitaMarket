@@ -355,3 +355,183 @@ textarea:focus-visible {
   margin: 1rem 0;
   padding: 0;
 }
+
+
+
+/* =========================================
+   13. CONTROLES DE FORMULARIO (comunes)
+   ========================================= */
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+input[type="search"],
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"],
+input[type="date"],
+input[type="number"],
+select,
+textarea {
+  padding: 0.6rem 0.75rem;
+  border: 2px solid var(--texto-suave);
+  border-radius: 6px;
+  background-color: var(--fondo);
+}
+
+label {
+  font-weight: bold;
+}
+
+fieldset {
+  margin: 0 0 1.5rem;
+  padding: 0.75rem 1rem 1rem;
+  border: 1px solid var(--borde);
+  border-radius: 6px;
+}
+
+legend {
+  padding: 0 0.5rem;
+  font-weight: bold;
+  color: var(--verde-oscuro);
+}
+
+/* Casilla o radio + su etiqueta, en fila */
+.opcion {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.4rem;
+}
+
+.opcion label {
+  font-weight: normal;
+}
+
+/* Etiqueta encima del campo */
+.campo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  margin-bottom: 1.5rem;
+}
+
+/* =========================================
+   14. AVISO DE PROTOTIPO
+   ========================================= */
+.aviso {
+  padding: 0.75rem 1rem;
+  border: 2px dashed var(--verde-oscuro);
+  border-radius: 6px;
+  background-color: var(--verde-claro);
+}
+
+/* =========================================
+   15. CATÁLOGO
+   ========================================= */
+.buscador {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  margin-bottom: 1rem;
+}
+
+.buscador-campo {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.buscador-campo input {
+  flex: 1;
+  max-width: 560px;
+}
+
+/* Filtros | resultados */
+.catalogo {
+  display: grid;
+  grid-template-columns: 260px minmax(0, 1fr);
+  gap: 2rem;
+  align-items: start;
+}
+
+.filtros {
+  padding: 1.25rem;
+  border: 1px solid var(--borde);
+  border-radius: 8px;
+}
+
+.filtros h2 {
+  margin-top: 0;
+  font-size: 1.25rem;
+}
+
+.filtros select {
+  width: 100%;
+}
+
+.resultados-cabecera {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.resultados-cabecera h2 {
+  margin: 0;
+}
+
+.rejilla-catalogo {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.5rem;
+}
+
+.disponibilidad {
+  color: var(--texto-suave);
+  font-size: 0.875rem;
+}
+
+/* =========================================
+   16. PAGINACIÓN
+   ========================================= */
+.paginacion ul {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  list-style: none;
+  margin: 2rem 0 0;
+  padding: 0;
+}
+
+.paginacion button {
+  min-width: 2.75rem;
+  padding: 0.5rem 0.9rem;
+  border: 2px solid var(--verde-oscuro);
+  border-radius: 6px;
+  background-color: var(--fondo);
+  color: var(--verde-oscuro);
+  font-family: inherit;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.paginacion button:hover {
+  background-color: var(--verde-claro);
+}
+
+/* Página actual: fondo + negrita + subrayado, no solo color */
+.paginacion .pagina-actual {
+  background-color: var(--verde-oscuro);
+  color: #ffffff;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.paginacion button:disabled {
+  border-color: var(--borde);
+  color: var(--texto-suave);
+  cursor: not-allowed;
+}

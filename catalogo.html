@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catálogo de productos · VitaMarket</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+  <header class="cabecera">
+    <a href="index.html" class="logo">VitaMarket</a>
+    <nav aria-label="Principal">
+      <ul class="menu">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="catalogo.html" aria-current="page">Catálogo</a></li>
+        <li><a href="carrito.html">Carrito (2)</a></li>
+        <li><a href="login.html">Acceder</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <h1>Catálogo de productos</h1>
+
+    <!-- BUSCADOR -->
+    <div class="buscador" role="search">
+      <label for="busqueda">Buscar productos</label>
+      <div class="buscador-campo">
+        <input type="search" id="busqueda" placeholder="Ej.: proteína, pasta, avena…">
+        <button type="button" class="boton">Buscar</button>
+      </div>
+    </div>
+
+    <p class="aviso">
+      <strong>Prototipo:</strong> la búsqueda, los filtros y la paginación
+      todavía no modifican los resultados.
+    </p>
+
+    <div class="catalogo">
+
+      <!-- FILTROS -->
+      <aside class="filtros" aria-labelledby="titulo-filtros">
+
+        <h2 id="titulo-filtros">Filtrar productos</h2>
+
+        <fieldset>
+          <legend>Tipo de dieta</legend>
+          <div class="opcion">
+            <input type="checkbox" id="dieta-vegano">
+            <label for="dieta-vegano">Vegano</label>
+          </div>
+          <div class="opcion">
+            <input type="checkbox" id="dieta-vegetariano">
+            <label for="dieta-vegetariano">Vegetariano</label>
+          </div>
+          <div class="opcion">
+            <input type="checkbox" id="dieta-sin-gluten">
+            <label for="dieta-sin-gluten">Sin gluten</label>
+          </div>
+          <div class="opcion">
+            <input type="checkbox" id="dieta-sin-lactosa">
+            <label for="dieta-sin-lactosa">Sin lactosa</label>
+          </div>
+          <div class="opcion">
+            <input type="checkbox" id="dieta-ecologico">
+            <label for="dieta-ecologico">Ecológico</label>
+          </div>
+          <div class="opcion">
+            <input type="checkbox" id="dieta-proteina">
+            <label for="dieta-proteina">Alto en proteína</label>
+          </div>
+        </fieldset>
+
+        <div class="campo">
+          <label for="categoria">Categoría</label>
+          <select id="categoria">
+            <option>Todas las categorías</option>
+            <option>Despensa</option>
+            <option>Bebidas</option>
+            <option>Refrigerados</option>
+            <option>Panadería</option>
+            <option>Nutrición deportiva</option>
+          </select>
+        </div>
+
+        <fieldset>
+          <legend>Precio</legend>
+          <div class="opcion">
+            <input type="radio" id="precio-1" name="precio">
+            <label for="precio-1">Hasta 5 €</label>
+          </div>
+          <div class="opcion">
+            <input type="radio" id="precio-2" name="precio">
+            <label for="precio-2">De 5 a 15 €</label>
+          </div>
+          <div class="opcion">
+            <input type="radio" id="precio-3" name="precio">
+            <label for="precio-3">Más de 15 €</label>
+          </div>
+        </fieldset>
+
+        <button type="button" class="boton">Aplicar filtros</button>
+
+      </aside>
+
+      <!-- RESULTADOS -->
+      <section class="resultados" aria-labelledby="titulo-resultados">
+
+        <div class="resultados-cabecera">
+          <h2 id="titulo-resultados">Resultados</h2>
+          <p>Mostrando 1–6 de 18 resultados</p>
+        </div>
+
+        <div class="rejilla-catalogo">
+
+          <article class="tarjeta">
+            <img src="img/proteina-vegana.svg" alt="Bote de proteína vegana sabor cacao">
+            <h3>Proteína vegana · 500 g</h3>
+            <ul class="etiquetas">
+              <li><span aria-hidden="true">✓</span> Vegano</li>
+              <li><span aria-hidden="true">✓</span> Sin gluten</li>
+            </ul>
+            <p>Guisante y arroz. 24 g de proteína por ración.</p>
+            <p class="precio">19,90 €</p>
+            <p class="disponibilidad">Disponible</p>
+            <a href="detalle.html" class="boton">Ver detalle</a>
+          </article>
+
+          <article class="tarjeta">
+            <img src="img/pasta-lentejas.svg" alt="Paquete de pasta de lentejas">
+            <h3>Pasta de lentejas · 250 g</h3>
+            <ul class="etiquetas">
+              <li><span aria-hidden="true">✓</span> Sin gluten</li>
+              <li><span aria-hidden="true">✓</span> Vegano</li>
+            </ul>
+            <p>Solo harina de lentejas rojas. Lista en 8 minutos.</p>
+            <p class="precio">2,49 €</p>
+            <p class="disponibilidad">Disponible</p>
+            <p class="aviso-ficha">Ficha no disponible en el prototipo</p>
+          </article>
+
+          <article class="tarjeta">
+            <img src="img/bebida-avena.svg" alt="Brick de bebida de avena">
+            <h3>Bebida de avena · 1 L</h3>
+            <ul class="etiquetas">
+              <li><span aria-hidden="true">✓</span> Sin lactosa</li>
+              <li><span aria-hidden="true">✓</span> Vegano</li>
+            </ul>
+            <p>Sin azúcares añadidos. Enriquecida con calcio.</p>
+            <p class="precio">1,89 €</p>
+            <p class="disponibilidad">Disponible</p>
+            <p class="aviso-ficha">Ficha no disponible en el prototipo</p>
+          </article>
+
+          <article class="tarjeta">
+            <img src="img/hamburguesa-vegetal.svg" alt="Dos hamburguesas vegetales en un plato">
+            <h3>Hamburguesa vegetal · 2 uds.</h3>
+            <ul class="etiquetas">
+              <li><span aria-hidden="true">✓</span> Vegano</li>
+            </ul>
+            <p>De garbanzos y espinacas.</p>
+            <p class="precio">3,25 €</p>
+            <p class="disponibilidad">Disponible</p>
+            <p class="aviso-ficha">Ficha no disponible en el prototipo</p>
+          </article>
+
+          <article class="tarjeta">
+            <img src="img/barrita-proteica.svg" alt="Barrita proteica de cacao y cacahuete">
+            <h3>Barrita proteica · 60 g</h3>
+            <ul class="etiquetas">
+              <li><span aria-hidden="true">✓</span> Alto en proteína</li>
+            </ul>
+            <p>Cacao y cacahuete. 20 g de proteína.</p>
+            <p class="precio">1,50 €</p>
+            <p class="disponibilidad">Pocas unidades</p>
+            <p class="aviso-ficha">Ficha no disponible en el prototipo</p>
+          </article>
+
+          <article class="tarjeta">
+            <img src="img/pan-sin-gluten.svg" alt="Pan de molde sin gluten">
+            <h3>Pan de molde · 400 g</h3>
+            <ul class="etiquetas">
+              <li><span aria-hidden="true">✓</span> Sin gluten</li>
+              <li><span aria-hidden="true">✓</span> Ecológico</li>
+            </ul>
+            <p>Harina de arroz y trigo sarraceno.</p>
+            <p class="precio">3,60 €</p>
+            <p class="disponibilidad">Disponible</p>
+            <p class="aviso-ficha">Ficha no disponible en el prototipo</p>
+          </article>
+
+        </div>
+
+        <!-- PAGINACIÓN -->
+        <nav class="paginacion" aria-label="Paginación">
+          <ul>
+            <li><button type="button" disabled>‹ Anterior</button></li>
+            <li><button type="button" class="pagina-actual" aria-current="page">1</button></li>
+            <li><button type="button">2</button></li>
+            <li><button type="button">3</button></li>
+            <li><button type="button">Siguiente ›</button></li>
+          </ul>
+        </nav>
+
+      </section>
+
+    </div>
+
+  </main>
+
+  <footer class="pie">
+    <p><strong>Prototipo educativo:</strong> no se realizan compras ni envíos reales.</p>
+    <nav aria-label="Pie de página">
+      <ul class="menu-pie">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="catalogo.html">Catálogo</a></li>
+        <li><a href="carrito.html">Carrito</a></li>
+        <li><a href="login.html">Acceder</a></li>
+      </ul>
+    </nav>
+    <p>© 2026 VitaMarket · Práctica DAW</p>
+  </footer>
+
+</body>
+</html>
