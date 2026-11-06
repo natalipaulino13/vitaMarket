@@ -1,0 +1,54 @@
+/* =========================================
+   1. VARIABLES: colores de toda la web
+   ========================================= */
+:root {
+  --verde-oscuro: #2f5d34;
+  --verde-claro: #e8f3e4;
+  --texto: #222222;
+  --texto-suave: #555555;
+  --fondo: #ffffff;
+  --borde: #cccccc;
+}
+
+/* =========================================
+   2. MODELO DE CAJA COHERENTE
+   ========================================= */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* =========================================
+   3. ESTILOS BASE
+   ========================================= */
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+  color: var(--texto);
+  background-color: var(--fondo);
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.2;
+  color: var(--verde-oscuro);
+}
+
+a {
+  color: var(--verde-oscuro);
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
