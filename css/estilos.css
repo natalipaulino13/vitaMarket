@@ -855,3 +855,25 @@ legend {
   font-size: 1.3rem;
   font-weight: bold;
 }
+
+
+/* =========================================
+   20. ACCESO
+   ========================================= */
+.caja-acceso {
+  max-width: 480px;
+  margin: 2rem auto 3rem;
+  padding: 2rem;
+  border: 3px solid var(--verde-oscuro);
+  border-radius: 10px;
+}
+
+.caja-acceso h1 {
+  margin-top: 0;
+}
+
+.instrucciones {
+  margin: 0;
+  color: var(--texto-suave);
+  font-size: 0.875rem;
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Acceso a tu cuenta · VitaMarket</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+  <header class="cabecera">
+    <a href="index.html" class="logo">VitaMarket</a>
+    <nav aria-label="Principal">
+      <ul class="menu">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="catalogo.html">Catálogo</a></li>
+        <li><a href="carrito.html">Carrito (2)</a></li>
+        <li><a href="login.html" aria-current="page">Acceder</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <nav class="pasos-pedido" aria-label="Pasos del pedido">
+      <ol>
+        <li>Paso 1 de 3: Carrito</li>
+        <li aria-current="step">Paso 2 de 3: Acceso</li>
+        <li>Paso 3 de 3: Datos de entrega</li>
+      </ol>
+    </nav>
+
+    <section class="caja-acceso" aria-labelledby="titulo-acceso">
+
+      <h1 id="titulo-acceso">Accede a tu cuenta</h1>
+
+      <p class="aviso">
+        <strong>Demostración:</strong> no hay autenticación real.
+        No introduzcas tu correo ni contraseñas reales.
+      </p>
+
+      <p>Los campos marcados con <span aria-hidden="true">*</span> son obligatorios.</p>
+
+      <form action="formulario.html" method="get">
+
+        <div class="campo">
+          <label for="correo-acceso">Correo electrónico <span aria-hidden="true">*</span></label>
+          <input type="email" id="correo-acceso" required
+                 placeholder="nombre@ejemplo.com">
+        </div>
+
+        <div class="campo">
+          <label for="password">Contraseña <span aria-hidden="true">*</span></label>
+          <input type="password" id="password" required minlength="8"
+                 aria-describedby="ayuda-password">
+          <p id="ayuda-password" class="instrucciones">Mínimo 8 caracteres.</p>
+        </div>
+
+        <button type="submit" class="boton boton-grande boton-ancho">Acceder y continuar</button>
+
+      </form>
+
+      <p>¿No tienes cuenta? El registro no está disponible en esta demostración.</p>
+      <a href="carrito.html" class="volver">← Volver al carrito</a>
+
+    </section>
+
+  </main>
+
+  <footer class="pie">
+    <p><strong>Prototipo educativo:</strong> no se realizan compras ni envíos reales.</p>
+    <nav aria-label="Pie de página">
+      <ul class="menu-pie">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="catalogo.html">Catálogo</a></li>
+        <li><a href="carrito.html">Carrito</a></li>
+        <li><a href="login.html">Acceder</a></li>
+      </ul>
+    </nav>
+    <p>© 2026 VitaMarket · Práctica DAW</p>
+  </footer>
+
+</body>
+</html>
