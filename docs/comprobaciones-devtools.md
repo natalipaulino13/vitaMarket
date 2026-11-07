@@ -4,7 +4,6 @@ Comprobaciones realizadas en Google Chrome sobre la web publicada en GitHub Page
 
 ## 1. Regla sobrescrita (cascada)
 
-## 1. Regla sobrescrita (cascada)
 
 **Elemento:** botón «Ver mi carrito» de la página de inicio (`<a class="boton boton-secundario">`).
 
@@ -23,7 +22,7 @@ También aparece tachado `color` en la regla `a`: pierde porque un selector de c
 
 **Conclusión:** la variante `.boton-secundario` reutiliza todos los estilos de `.boton` (tamaño, borde, tipografía) y solo sobrescribe el fondo y el color del texto.
 
-## 2. Modelo de caja de un componente
+
 
 ## 2. Modelo de caja de un componente
 
