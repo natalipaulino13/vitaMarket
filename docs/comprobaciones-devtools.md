@@ -57,4 +57,23 @@ Ahora cada columna mide como mínimo 200 px y el navegador coloca tantas columna
 
 ## 3. Distribución con Grid en el inspector
 
-*(Pendiente)*
+**Elemento:** rejilla de tarjetas del catálogo (`<div class="rejilla-catalogo">`).
+
+![Regla CSS de la rejilla en el panel Styles](devtools/03-grid-estilos.png)
+
+**Regla aplicada:**
+
+- `display: grid` convierte el contenedor en una rejilla.
+- `grid-template-columns: repeat(auto-fill, minmax(200px, 1fr))` crea columnas flexibles de un mínimo de 200 px que se reparten el espacio sobrante. El navegador coloca tantas columnas como quepan.
+- `gap: 1.5rem` separa las tarjetas 24 px sin usar márgenes.
+
+**Qué he comprobado:** he activado la superposición de Grid (etiqueta `grid` en el panel *Elements*) y, en la pestaña *Layout*, la opción *Show track sizes*.
+
+![Superposición de la rejilla con el tamaño de las columnas](devtools/03-grid-rejilla.png)
+
+- Con la ventana a ancho completo se forman **3 columnas iguales de 265,33 px**, todas mayores que el mínimo de 200 px.
+- El `gap` aparece rayado entre las columnas: 3 × 265,33 + 2 × 24 = 844 px, el ancho total de la zona de resultados.
+- La altura de la fila es de 457,05 px y **no está fijada en el CSS**: crece según el contenido de las tarjetas, por lo que los textos más largos no se recortan.
+- El orden visual de las tarjetas coincide con el orden del HTML.
+
+**Relación con la comprobación 2:** con una ventana estrecha, la misma regla produce una sola columna, porque no caben tres de 200 px. Así las tarjetas nunca se estrechan hasta desbordarse.
