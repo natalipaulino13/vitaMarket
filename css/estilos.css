@@ -225,6 +225,10 @@ textarea:focus-visible {
   width: 48px;
 }
 
+.categorias .instrucciones {
+  margin-top: 0.75rem;
+}
+
 /* =========================================
    9. PRODUCTOS DESTACADOS (Grid)
    ========================================= */

@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Datos de entrega · VitaMarket</title>
   <link rel="stylesheet" href="css/estilos.css">
-    <link rel="icon" href="img/icono-vegano.svg" type="image/svg+xml">
+  <link rel="icon" href="img/icono-vegano.svg" type="image/svg+xml">
 </head>
+
 <body>
 
   <header class="cabecera">
@@ -61,7 +63,8 @@
           <div class="campo">
             <label for="telefono">Teléfono <span aria-hidden="true">*</span></label>
             <input type="tel" id="telefono" required pattern="[0-9]{9}"
-                   aria-describedby="ayuda-telefono" class="campo-corto">
+              title="9 cifras sin espacios, por ejemplo 612345678" aria-describedby="ayuda-telefono"
+              class="campo-corto">
             <p id="ayuda-telefono" class="instrucciones">9 cifras sin espacios. Ejemplo: 612345678.</p>
           </div>
         </fieldset>
@@ -90,15 +93,14 @@
           <div class="campo">
             <label for="codigo-postal">Código postal (solo para entrega a domicilio)</label>
             <input type="text" id="codigo-postal" pattern="[0-9]{5}" inputmode="numeric"
-                   aria-describedby="ayuda-cp" class="campo-corto">
+              title="5 cifras, por ejemplo 28001" aria-describedby="ayuda-cp" class="campo-corto">
             <p id="ayuda-cp" class="instrucciones">5 cifras. Ejemplo: 28001.</p>
           </div>
 
           <div class="fila-campos">
             <div class="campo">
               <label for="fecha">Fecha de entrega <span aria-hidden="true">*</span></label>
-              <input type="date" id="fecha" required min="2026-11-09"
-                     aria-describedby="ayuda-fecha">
+              <input type="date" id="fecha" required min="2026-11-09" aria-describedby="ayuda-fecha">
               <p id="ayuda-fecha" class="instrucciones">Entregas a partir del 09/11/2026.</p>
             </div>
 
@@ -127,9 +129,8 @@
 
           <div class="campo">
             <label for="instrucciones-reparto">Instrucciones para el repartidor</label>
-            <textarea id="instrucciones-reparto" rows="3" maxlength="300"
-                      aria-describedby="ayuda-reparto"
-                      placeholder="Ej.: llamar al timbre 2.º B"></textarea>
+            <textarea id="instrucciones-reparto" rows="3" maxlength="300" aria-describedby="ayuda-reparto"
+              placeholder="Ej.: llamar al timbre 2.º B"></textarea>
             <p id="ayuda-reparto" class="instrucciones">Máximo 300 caracteres.</p>
           </div>
         </fieldset>
@@ -171,4 +172,5 @@
   </footer>
 
 </body>
+
 </html>
