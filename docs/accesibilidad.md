@@ -14,8 +14,8 @@ Revisión parcial realizada sobre la web publicada en GitHub Pages con Google Ch
 | Formularios: agrupaciones e instrucciones | Catálogo y formulario | Revisión visual y del código | Filtros y formulario agrupados con `fieldset` y `legend`. Teléfono, código postal, fecha e instrucciones tienen indicación asociada con `aria-describedby`. El `placeholder` solo es un ejemplo, nunca sustituye a la etiqueta | Ninguna |
 | Teclado | Las 6 páginas y recorrido completo de compra | Navegación solo con Tab, Mayús + Tab, Enter, Espacio y flechas | Se llega a todos los enlaces, botones y campos, y se pueden usar. No hay trampas de teclado | Ninguna |
 | Foco | Las 6 páginas | Navegación con Tab | El foco se ve siempre (contorno azul `#1a4fa3` de 3 px; blanco en el pie, sobre fondo oscuro). El orden sigue el orden de lectura | Ninguna |
+| Contraste | Textos y fondos de las 6 páginas | DevTools (selector de color, *Contrast ratio*) y cálculo con la fórmula de WCAG cuando DevTools no detectó el fondo | Todas las combinaciones superan 4,5:1 (ver tabla de contraste). La más baja es la etiqueta de características: 6,71:1 | Ninguna. DevTools calculaba la etiqueta contra el fondo blanco; se calculó con sus colores reales |
 | Uso del color | Menú, pasos del pedido, paginación y etiquetas | Revisión visual | La página y el paso actuales se marcan con negrita y línea, no solo con color. Las etiquetas llevan ✓ y texto | Ninguna |
-| Contraste | *(pendiente)* | | | |
 | Ampliación al 200 % | *(pendiente)* | | | |
 
 ## Evidencias
@@ -28,7 +28,24 @@ Revisión parcial realizada sobre la web publicada en GitHub Pages con Google Ch
 
 ### Contraste
 
-*(pendiente)*
+Mínimo exigido: 4,5:1 para texto normal y 3:1 para texto grande (al menos 24 px, o unos 18,7 px en negrita).
+
+| Texto | Fondo | Dónde se usa | Relación | Resultado |
+|---|---|---|---|---|
+| `#222222` | `#ffffff` | Texto normal | 15,91:1 | Cumple |
+| `#222222` | `#e8f3e4` | Menú de la cabecera y avisos de prototipo | 13,92:1 | Cumple |
+| `#555555` | `#ffffff` | Instrucciones, disponibilidad y textos secundarios | 7,46:1 | Cumple |
+| `#2f5d34` | `#ffffff` | Títulos y enlaces | 7,67:1 | Cumple |
+| `#2f5d34` | `#e8f3e4` | Etiquetas, logo y página actual del menú | 6,71:1 | Cumple |
+| `#ffffff` | `#2f5d34` | Botones y pie de página | 7,67:1 | Cumple |
+| `#ffffff` | `#24482a` | Botones al pasar el ratón | 10,32:1 | Cumple |
+| `#1a4fa3` | `#ffffff` | Contorno del foco | 7,80:1 | Cumple (mínimo 3:1 para elementos que no son texto) |
+
+![Contraste del título h1: 7,67:1](accesibilidad/03-contraste-titulo.png)
+
+![Contraste del botón principal: 7,67:1](accesibilidad/04-contraste-boton.png)
+
+![Contraste de la etiqueta de características: 6,71:1](accesibilidad/05-contraste-etiqueta.png)
 
 ### Ampliación al 200 %
 
