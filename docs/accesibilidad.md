@@ -16,7 +16,7 @@ Revisión parcial realizada sobre la web publicada en GitHub Pages con Google Ch
 | Foco | Las 6 páginas | Navegación con Tab | El foco se ve siempre (contorno azul `#1a4fa3` de 3 px; blanco en el pie, sobre fondo oscuro). El orden sigue el orden de lectura | Ninguna |
 | Contraste | Textos y fondos de las 6 páginas | DevTools (selector de color, *Contrast ratio*) y cálculo con la fórmula de WCAG cuando DevTools no detectó el fondo | Todas las combinaciones superan 4,5:1 (ver tabla de contraste). La más baja es la etiqueta de características: 6,71:1 | Ninguna. DevTools calculaba la etiqueta contra el fondo blanco; se calculó con sus colores reales |
 | Uso del color | Menú, pasos del pedido, paginación y etiquetas | Revisión visual | La página y el paso actuales se marcan con negrita y línea, no solo con color. Las etiquetas llevan ✓ y texto | Ninguna |
-| Ampliación al 200 % | *(pendiente)* | | | |
+| Ampliación al 200 % | Las 6 páginas | Zoom del navegador al 200 % (Ctrl + +) y recorrido de cada página hasta el pie | Se puede usar todo sin scroll horizontal ni superposiciones. En «Compra según tu dieta» (inicio), el texto de los 4 atajos quedaba pegado al borde de la caja y las cajas tenían alturas distintas | **Corregido:** el icono se coloca encima del texto (`flex-direction: column`) y el enlace ocupa toda la altura del `li`, así las 4 cajas tienen la misma altura y el texto dispone de todo el ancho |
 
 ## Evidencias
 
@@ -49,4 +49,18 @@ Mínimo exigido: 4,5:1 para texto normal y 3:1 para texto grande (al menos 24 px
 
 ### Ampliación al 200 %
 
-*(pendiente)*
+**Problema detectado** en «Compra según tu dieta»: el texto queda pegado al borde y las cajas tienen alturas distintas.
+
+![Antes: texto de los atajos pegado al borde al 200 %](accesibilidad/06-ampliacion-categorias-antes.png)
+
+**Corrección:** icono encima del texto y cajas de la misma altura.
+
+![Después: atajos corregidos al 200 %](accesibilidad/10-ampliacion-categorias-despues.png)
+
+**Resto de páginas:** sin problemas. Las tarjetas se estrechan y los textos saltan de línea, pero no se recorta ni se pierde nada.
+
+![Catálogo al 200 %](accesibilidad/07-ampliacion-catalogo.png)
+
+![Productos destacados al 200 %](accesibilidad/09-ampliacion-destacados.png)
+
+![Formulario de entrega al 200 %](accesibilidad/08-ampliacion-formulario.png)
