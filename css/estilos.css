@@ -187,6 +187,14 @@ textarea:focus-visible {
 /* =========================================
    8. COMPRA SEGÚN TU DIETA (Flexbox)
    ========================================= */
+.lista-categorias {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
 .lista-categorias li {
   flex: 1;
   display: flex;
@@ -206,6 +214,15 @@ textarea:focus-visible {
   font-weight: bold;
   text-align: center;
   text-decoration: none;
+}
+
+.lista-categorias a:hover {
+  border-color: var(--verde-oscuro);
+  background-color: var(--verde-claro);
+}
+
+.lista-categorias img {
+  width: 48px;
 }
 
 /* =========================================
