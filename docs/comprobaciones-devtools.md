@@ -4,7 +4,6 @@ Comprobaciones realizadas en Google Chrome sobre la web publicada en GitHub Page
 
 ## 1. Regla sobrescrita (cascada)
 
-
 **Elemento:** botón «Ver mi carrito» de la página de inicio (`<a class="boton boton-secundario">`).
 
 ![Panel Styles: la regla .boton aparece tachada](devtools/01-cascada-estilos.png)
@@ -22,8 +21,6 @@ También aparece tachado `color` en la regla `a`: pierde porque un selector de c
 
 **Conclusión:** la variante `.boton-secundario` reutiliza todos los estilos de `.boton` (tamaño, borde, tipografía) y solo sobrescribe el fondo y el color del texto.
 
-
-
 ## 2. Modelo de caja de un componente
 
 **Elemento:** tarjeta de producto del catálogo (`<article class="tarjeta">`, proteína vegana).
@@ -33,7 +30,7 @@ También aparece tachado `color` en la regla `a`: pierde porque un selector de c
 - **Padding:** 16 px por cada lado (`padding: 1rem`).
 - **Border:** 1 px en el CSS. DevTools muestra 0,8 px porque el escalado de pantalla de Windows está al 125 % y el navegador redondea el borde a píxeles reales.
 - **Margin:** 0. La separación entre tarjetas la hace el `gap` del Grid, no el margen.
-- **box-sizing: border-box**, aplicado a todos los elementos con la regla `*, *::before, *::after` (línea 20). El ancho de la tarjeta incluye el padding y el borde, así que la tarjeta siempre ocupa exactamente su columna del Grid y no se sale de ella.
+- **box-sizing: border-box**, aplicado a todos los elementos con la regla `*, *::before, *::after` (línea 20). Hace que, cuando un elemento tiene un ancho fijado (`width`), ese ancho incluya el padding y el borde. La tarjeta no tiene `width`: su ancho lo da la columna del Grid (118,4 px = 84,8 de contenido + 32 de padding + 1,6 de borde). Donde sí se nota es, por ejemplo, en el `select` de los filtros (`width: 100%`, con padding y borde): sin `border-box` mediría el 100 % más 28 px y se saldría de la caja de filtros.
 
 ![Modelo de caja y box-sizing de la tarjeta](devtools/02-caja-box-sizing.png)
 
