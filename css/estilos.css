@@ -933,3 +933,25 @@ textarea {
   margin: 0 0 1rem;
   padding-left: 1.25rem;
 }
+
+
+/* =========================================
+   22. PUNTO DE RUPTURA: DETALLE DE PRODUCTO
+   Por debajo de 768px las dos columnas quedan
+   demasiado estrechas: pasamos a una sola.
+   ========================================= */
+@media (max-width: 768px) {
+  .detalle {
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-areas:
+      "imagen"
+      "info"
+      "nutricion"
+      "texto";
+    gap: 1.5rem;
+  }
+
+  .precio-grande {
+    font-size: 1.75rem;
+  }
+}
