@@ -222,7 +222,8 @@ textarea:focus-visible {
 }
 
 .lista-categorias img {
-  width: 48px;
+  width: 90%;
+  max-width: 1100px;
 }
 
 .categorias .instrucciones {
@@ -480,6 +481,7 @@ legend {
 
 .filtros select {
   width: 100%;
+  max-width: 1100px;
 }
 
 .resultados-cabecera {
@@ -672,6 +674,7 @@ legend {
 /* Tabla nutricional */
 .tabla-nutricional {
   width: 100%;
+  max-width: 1100;
   border-collapse: collapse;
 }
 
@@ -763,7 +766,8 @@ legend {
 
 .fila-carrito img {
   flex: none;
-  width: 90px;
+  width: 90%;
+  max-width: 1100;
   border-radius: 6px;
 }
 
