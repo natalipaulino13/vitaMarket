@@ -2,6 +2,10 @@
    1. VARIABLES: colores de toda la web
    ========================================= */
 :root {
+  /* Avisa al navegador de que hay dos temas: así adapta
+     solo los controles nativos (date, select, scroll...) */
+  color-scheme: light dark;
+
   --verde-oscuro: #2f5d34;
   --verde-hover: #24482a;
   --verde-claro: #e8f3e4;
@@ -10,6 +14,33 @@
   --fondo: #ffffff;
   --borde: #cccccc;
   --foco: #1a4fa3;
+
+  /* Nuevas: antes eran #ffffff escritos a mano */
+  --texto-inverso: #ffffff;   /* texto sobre botones y distintivos verdes */
+  --fondo-pie: #2f5d34;
+  --texto-pie: #ffffff;
+}
+
+/* =========================================
+   1b. TEMA OSCURO
+   Solo cambian los valores de las variables;
+   el resto del CSS no se toca.
+   ========================================= */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --verde-oscuro: #8fd19a;  /* en oscuro el "verde de acento" es claro */
+    --verde-hover: #b2e3b9;
+    --verde-claro: #1e3322;   /* fondos suaves: verde muy oscuro */
+    --texto: #e8ece8;
+    --texto-suave: #b4bcb4;
+    --fondo: #121712;
+    --borde: #3d4a3e;
+    --foco: #8ab4ff;          /* el azul original no se ve sobre fondo oscuro */
+
+    --texto-inverso: #0f1f11; /* sobre un verde claro, el texto va oscuro */
+    --fondo-pie: #1a2b1c;
+    --texto-pie: #ffffff;
+  }
 }
 
 /* =========================================
@@ -129,7 +160,7 @@ textarea:focus-visible {
   border: 2px solid var(--verde-oscuro);
   border-radius: 6px;
   background-color: var(--verde-oscuro);
-  color: #ffffff;
+  color: var(--texto-inverso);
   font-family: inherit;
   font-size: 1rem;
   font-weight: bold;
@@ -285,7 +316,7 @@ textarea:focus-visible {
   padding: 0.25rem 0.75rem;
   border-radius: 4px;
   background-color: var(--verde-oscuro);
-  color: #ffffff;
+  color: var(--texto-inverso);
   font-size: 0.8rem;
   font-weight: bold;
   text-transform: uppercase;
@@ -345,18 +376,18 @@ textarea:focus-visible {
    ========================================= */
 .pie {
   padding: 2rem;
-  background-color: var(--verde-oscuro);
-  color: #ffffff;
+  background-color: var(--fondo-pie);
+  color: var(--texto-pie);
   text-align: center;
 }
 
 .pie a {
-  color: #ffffff;
+  color: var(--texto-pie);
 }
 
-/* Sobre fondo oscuro, el foco azul no se vería: lo cambiamos a blanco */
+/* Sobre fondo oscuro, el foco azul no se vería: lo cambiamos al color del texto del pie */
 .pie a:focus-visible {
-  outline-color: #ffffff;
+  outline-color: var(--texto-pie);
 }
 
 .menu-pie {
@@ -369,8 +400,6 @@ textarea:focus-visible {
   padding: 0;
 }
 
-
-
 /* =========================================
    13. CONTROLES DE FORMULARIO (comunes)
    ========================================= */
@@ -379,6 +408,7 @@ select,
 textarea {
   font-family: inherit;
   font-size: 1rem;
+  color: var(--texto); /* los controles no heredan el color: sin esto, texto negro en tema oscuro */
 }
 
 input[type="search"],
@@ -394,6 +424,17 @@ textarea {
   border: 2px solid var(--texto-suave);
   border-radius: 6px;
   background-color: var(--fondo);
+}
+
+/* Casillas y radios con el verde de la marca (cambia con el tema) */
+input[type="checkbox"],
+input[type="radio"] {
+  accent-color: var(--verde-oscuro);
+}
+
+/* El texto de ejemplo también cambia con el tema */
+::placeholder {
+  color: var(--texto-suave);
 }
 
 label {
@@ -546,7 +587,7 @@ legend {
 /* Página actual: fondo + negrita + subrayado, no solo color */
 .paginacion .pagina-actual {
   background-color: var(--verde-oscuro);
-  color: #ffffff;
+  color: var(--texto-inverso);
   font-weight: bold;
   text-decoration: underline;
 }
@@ -556,7 +597,6 @@ legend {
   color: var(--texto-suave);
   cursor: not-allowed;
 }
-
 
 /* =========================================
    17. DETALLE DE PRODUCTO
@@ -684,7 +724,7 @@ legend {
 /* Tabla nutricional */
 .tabla-nutricional {
   width: 100%;
-  max-width: 1100;
+  max-width: 1100px; /* corregido: antes faltaba la unidad */
   border-collapse: collapse;
 }
 
@@ -716,7 +756,6 @@ legend {
 .tabla-nutricional .fila-destacada td {
   font-weight: bold;
 }
-
 
 /* =========================================
    18. PASOS DEL PEDIDO
@@ -777,7 +816,7 @@ legend {
 .fila-carrito img {
   flex: none;
   width: 90%;
-  max-width: 1100;
+  max-width: 1100px; /* corregido: antes faltaba la unidad */
   border-radius: 6px;
 }
 
@@ -879,7 +918,6 @@ legend {
   font-weight: bold;
 }
 
-
 /* =========================================
    20. ACCESO
    ========================================= */
@@ -944,7 +982,6 @@ textarea {
   padding-left: 1.25rem;
 }
 
-
 /* =========================================
    22. PUNTO DE RUPTURA: DETALLE DE PRODUCTO
    Por debajo de 768px las dos columnas quedan
@@ -965,8 +1002,6 @@ textarea {
     font-size: 1.75rem;
   }
 }
-
-
 
 /* =========================================
    23. PUNTO DE RUPTURA: CATÁLOGO
