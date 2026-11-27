@@ -16,7 +16,8 @@
   --foco: #1a4fa3;
 
   /* Nuevas: antes eran #ffffff escritos a mano */
-  --texto-inverso: #ffffff;   /* texto sobre botones y distintivos verdes */
+  --texto-inverso: #ffffff;
+  /* texto sobre botones y distintivos verdes */
   --fondo-pie: #2f5d34;
   --texto-pie: #ffffff;
 }
@@ -28,16 +29,20 @@
    ========================================= */
 @media (prefers-color-scheme: dark) {
   :root {
-    --verde-oscuro: #8fd19a;  /* en oscuro el "verde de acento" es claro */
+    --verde-oscuro: #8fd19a;
+    /* en oscuro el "verde de acento" es claro */
     --verde-hover: #b2e3b9;
-    --verde-claro: #1e3322;   /* fondos suaves: verde muy oscuro */
+    --verde-claro: #1e3322;
+    /* fondos suaves: verde muy oscuro */
     --texto: #e8ece8;
     --texto-suave: #b4bcb4;
     --fondo: #121712;
     --borde: #3d4a3e;
-    --foco: #8ab4ff;          /* el azul original no se ve sobre fondo oscuro */
+    --foco: #8ab4ff;
+    /* el azul original no se ve sobre fondo oscuro */
 
-    --texto-inverso: #0f1f11; /* sobre un verde claro, el texto va oscuro */
+    --texto-inverso: #0f1f11;
+    /* sobre un verde claro, el texto va oscuro */
     --fondo-pie: #1a2b1c;
     --texto-pie: #ffffff;
   }
@@ -87,7 +92,7 @@ main {
 }
 
 /* Separación entre las secciones del main */
-main > section {
+main>section {
   margin-bottom: 3rem;
 }
 
@@ -408,7 +413,8 @@ select,
 textarea {
   font-family: inherit;
   font-size: 1rem;
-  color: var(--texto); /* los controles no heredan el color: sin esto, texto negro en tema oscuro */
+  color: var(--texto);
+  /* los controles no heredan el color: sin esto, texto negro en tema oscuro */
 }
 
 input[type="search"],
@@ -614,7 +620,7 @@ legend {
 }
 
 /* Separador "›" antes de cada miga, excepto la primera */
-.migas li + li::before {
+.migas li+li::before {
   content: "›";
   margin-right: 0.5rem;
   color: var(--texto-suave);
@@ -724,7 +730,8 @@ legend {
 /* Tabla nutricional */
 .tabla-nutricional {
   width: 100%;
-  max-width: 1100px; /* corregido: antes faltaba la unidad */
+  max-width: 1100px;
+  /* corregido: antes faltaba la unidad */
   border-collapse: collapse;
 }
 
@@ -816,7 +823,8 @@ legend {
 .fila-carrito img {
   flex: none;
   width: 90%;
-  max-width: 1100px; /* corregido: antes faltaba la unidad */
+  max-width: 1100px;
+  /* corregido: antes faltaba la unidad */
   border-radius: 6px;
 }
 
@@ -1026,11 +1034,11 @@ textarea {
 
   /* Título y botón ocupan toda la fila */
   .filtros h2,
-  .filtros > .boton {
+  .filtros>.boton {
     grid-column: 1 / -1;
   }
 
-  .filtros > .boton {
+  .filtros>.boton {
     justify-self: start;
   }
 }
